@@ -25,8 +25,8 @@
                             purple: '#d8b4fe',
                             blue: '#93c5fd',
                             pink: '#fbcfe8',
-                            dark: '#0a0c24',
-                            panel: 'rgba(15, 18, 48, 0.88)'
+                            dark: '#080a21',
+                            panel: 'rgba(18, 22, 58, 0.88)'
                         }
                     }
                 }
@@ -40,60 +40,60 @@
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #0b0c20;
+            background: #060718;
         }
         ::-webkit-scrollbar-thumb {
-            background: rgba(216, 180, 254, 0.4);
+            background: rgba(216, 180, 254, 0.5);
             border-radius: 999px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(216, 180, 254, 0.8);
+            background: rgba(216, 180, 254, 0.9);
         }
 
-        /* Luminous Glassmorphism - Brighter and more colorful */
+        /* Luminous Glassmorphism - Bright, colorful and translucent */
         .glass-hud {
-            background: rgba(16, 20, 55, 0.85); /* Vibrant indigo glass */
+            background: rgba(18, 22, 58, 0.85); /* Radiant purple-indigo frosted glass */
             backdrop-filter: blur(24px) saturate(180%);
             -webkit-backdrop-filter: blur(24px) saturate(180%);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 10px 40px rgba(138, 43, 226, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 40px rgba(167, 132, 252, 0.2);
         }
         
         .glass-card {
-            background: rgba(22, 27, 68, 0.82); /* High contrast colorful indigo */
+            background: rgba(24, 30, 78, 0.78); /* Deep translucent purple card body */
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         
         .glass-card:hover {
-            background: rgba(30, 36, 88, 0.95);
-            border-color: rgba(216, 180, 254, 0.6);
-            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.35);
-            transform: translateY(-4px) scale(1.01);
+            background: rgba(32, 40, 100, 0.92);
+            border-color: rgba(216, 180, 254, 0.7);
+            box-shadow: 0 20px 40px rgba(167, 132, 252, 0.4);
+            transform: translateY(-5px) scale(1.015);
         }
 
-        /* Text Contrast Shadows for Brighter backgrounds */
+        /* High Text Contrast Shadows */
         .text-readable {
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
         }
         
         .title-readable {
-            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.85), 0 0 20px rgba(216, 180, 254, 0.3);
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.85), 0 0 20px rgba(216, 180, 254, 0.35);
         }
 
-        /* Vibrant gradient colors */
+        /* Vibrant gradient text styling */
         .text-gradient-cosmic {
-            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 45%, #c084fc 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 45%, #fbcfe8 75%, #d8b4fe 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Bright glowing background with nebula shine */
+        /* Glowing background overlay - Bright Luminous style allowing back.jpg nebula lights to shine */
         .bg-fixed-back {
-            background-image: linear-gradient(rgba(14, 11, 36, 0.45), rgba(15, 23, 42, 0.55)), url('back.jpg');
+            background-image: linear-gradient(rgba(14, 11, 40, 0.42), rgba(15, 23, 45, 0.52)), url('back.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -111,8 +111,8 @@
 
         /* Glowing Constellation Connection Path */
         .constellation-line {
-            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.6) 15%, rgba(244, 114, 182, 0.6) 85%, transparent);
-            box-shadow: 0 0 10px rgba(216, 180, 254, 0.4);
+            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.7) 15%, rgba(244, 114, 182, 0.7) 85%, transparent);
+            box-shadow: 0 0 10px rgba(216, 180, 254, 0.5);
         }
 
         /* Tab Switch Animation */
@@ -140,7 +140,7 @@
             </a>
             
             <div class="flex items-center gap-6">
-                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/50 to-pink-500/50 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/20">
+                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/50 to-pink-500/50 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/20 relative z-50">
                     <i class="fab fa-google-drive"></i> Xem bài tập trên GG drive
                 </a>
             </div>
@@ -195,10 +195,10 @@
                 <div class="glass-hud rounded-3xl p-6 flex flex-col gap-4 shadow-2xl">
                     <!-- Tab Headers -->
                     <div class="flex bg-slate-950/60 rounded-full p-1 border border-white/10 text-xs sm:text-sm font-semibold">
-                        <button onclick="switchTab('goals-tab')" id="goals-tab-btn" class="w-1/2 py-2 rounded-full text-center text-white bg-violet-600/50 border border-violet-400/30 transition duration-300 shadow-md">
+                        <button onclick="window.switchTab('goals-tab')" id="goals-tab-btn" class="w-1/2 py-2 rounded-full text-center text-white bg-violet-600/50 border border-violet-400/30 transition duration-300 shadow-md">
                             <i class="fa-solid fa-bullseye mr-1.5"></i> Mục Tiêu
                         </button>
-                        <button onclick="switchTab('reflection-tab')" id="reflection-tab-btn" class="w-1/2 py-2 rounded-full text-center text-slate-300 hover:text-white transition duration-300">
+                        <button onclick="window.switchTab('reflection-tab')" id="reflection-tab-btn" class="w-1/2 py-2 rounded-full text-center text-slate-300 hover:text-white transition duration-300">
                             <i class="fa-solid fa-file-invoice mr-1.5"></i> Tổng Kết
                         </button>
                     </div>
@@ -233,7 +233,7 @@
                                 <span class="font-semibold text-emerald-300">Thuận lợi:</span> Tiếp cận sớm các mô hình LLMs chuyên nghiệp, nâng cao tư duy học thuật sư phạm.
                             </div>
                             <div>
-                                <span class="font-semibold text-rose-400">Thách thức:</span> Hiện tượng AI sinh thông tin giả (ảo giác), lỗi hiển thị font tiếng Việt khi sinh ảnh.
+                                <span class="font-semibold text-rose-300">Thách thức:</span> Hiện tượng AI sinh thông tin giả (ảo giác), lỗi hiển thị font tiếng Việt khi sinh ảnh.
                             </div>
                             <div>
                                 <span class="font-semibold text-violet-300">Bài học:</span> AI là trợ lý đồng hành, tư duy con người mới là kim chỉ nam định đoạt giá trị.
@@ -398,7 +398,7 @@
                     <div class="glass-card rounded-3xl p-6 grid grid-cols-1 md:grid-cols-12 gap-6 border border-white/10">
                         <!-- Menu selection (Left) -->
                         <div class="md:col-span-4 flex flex-col gap-2.5">
-                            <button onclick="showSimulation(1)" id="sim-btn-1" class="px-4 py-3 rounded-xl bg-violet-600/30 text-white border border-violet-400/40 text-xs sm:text-sm text-left font-medium transition duration-300">
+                            <button onclick="showSimulation(1)" id="sim-btn-1" class="px-4 py-3 rounded-xl bg-violet-600/35 text-white border border-violet-400/40 text-xs sm:text-sm text-left font-medium transition duration-300">
                                 <i class="fa-solid fa-lightbulb mr-2"></i> Giai Đoạn 1: Lên ý tưởng
                             </button>
                             <button onclick="showSimulation(2)" id="sim-btn-2" class="px-4 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-900 text-slate-300 hover:text-white border border-white/5 text-xs sm:text-sm text-left font-medium transition duration-300">
@@ -565,72 +565,86 @@
         initCanvas();
         animate();
 
-        // COMPREHENSIVE RAW CONTENT DATA FOR 6 ASSIGNMENTS (Strictly Unescaped and formatted)
+        // COMPREHENSIVE RAW CONTENT DATA FOR 6 ASSIGNMENTS (Strictly Unescaped and formatted with Goals & Lessons)
         const modalsData = {
             '1': {
                 subtitle: "Bài Tập 1 • Mục 1.4",
                 title: "Thao Tác Tệp & Thư Mục: 12 Bước Quản Trị Hệ Thống Chuẩn",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
-                        <p class="font-light">
-                            Trong bất kỳ môi trường kỹ thuật số nào, cấu trúc dữ liệu khoa học là chiếc chìa khóa tối ưu hiệu suất. Bài thực hành này giúp mình hệ thống hóa toàn bộ 12 bước thao tác hệ điều hành Windows tiêu chuẩn để tối ưu không gian lưu trữ và đảm bảo an toàn thông tin:
-                        </p>
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-blue-300"></i> Mục tiêu bài học (Goals):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Nắm vững cấu trúc logic lưu trữ tệp tin trên hệ thống máy tính Windows cá nhân, rèn luyện kỹ năng phân tách dữ liệu khoa học, bảo đảm tính an toàn khi thao tác và tối ưu hóa 50% thời gian xử lý dữ liệu học thuật.
+                            </p>
+                        </div>
                         
                         <!-- 12-Step Vertical Timeline -->
                         <div class="glass-card rounded-2xl p-6 border border-white/10 flex flex-col gap-4">
                             <h4 class="font-serif font-bold text-white mb-2 flex items-center gap-2">
-                                <i class="fa-solid fa-list-ol text-violet-400"></i> Quy trình thực hiện chuẩn hóa 12 bước:
+                                <i class="fa-solid fa-list-ol text-violet-400"></i> Quy trình thực hiện 12 bước chi tiết:
                             </h4>
                             <div class="space-y-4 font-light text-xs sm:text-sm pl-2">
                                 <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">1</span>
-                                    <span><strong>Mở File Explorer:</strong> Nhấn tổ hợp phím tắt <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Windows + E</code> hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.</span>
+                                    <span><strong>Mở File Explorer:</strong> Nhấn tổ hợp phím tắt nhanh <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Windows + E</code> hoặc nhấp trực tiếp vào biểu tượng thư mục màu vàng trên thanh tác vụ (Taskbar).</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">2</span>
-                                    <span><strong>Truy cập ổ đĩa:</strong> Ở cột trái nhấp vào <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">This PC</code>, nhấp đúp vào ổ đĩa không phải ổ hệ thống (D: hoặc E:). Nếu chỉ có ổ C:, truy cập thư mục <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Documents</code>.</span>
+                                    <span><strong>Truy cập không gian lưu trữ ngoài hệ thống:</strong> Ở cột trái của giao diện, nhấp chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">This PC</code>, sau đó nhấp đúp truy cập vào một ổ đĩa không chứa hệ điều hành (ví dụ cụ thể là ổ D: hoặc E:). Trường hợp máy tính của bạn chỉ sở hữu duy nhất phân vùng ổ C:, hãy tiến hành truy cập thư mục hệ thống <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Documents</code>.</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">3</span>
-                                    <span><strong>Tạo thư mục mới:</strong> Nhấp chuột phải vào khoảng trống -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Folder</code>. Đặt tên thư mục theo cấu trúc chuẩn: <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs font-semibold">ThucHanh_TranThiThuPhuong</code> rồi nhấn Enter.</span>
+                                    <span><strong>Tạo thư mục thực hành mới:</strong> Nhấp chuột phải vào một khoảng trống bất kỳ trên màn hình thư mục -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Folder</code>. Đặt tên thư mục theo đúng quy chuẩn định dạng: <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs font-semibold">ThucHanh_TranThiThuPhuong</code> và nhấn phím Enter để lưu lại.</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">4</span>
-                                    <span><strong>Vào thư mục vừa tạo:</strong> Nhấp đúp vào thư mục <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">ThucHanh_TranThiThuPhuong</code> để truy cập vào trong.</span>
+                                    <span><strong>Vào thư mục vừa tạo:</strong> Nhấp đúp chuột trái vào thư mục <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">ThucHanh_TranThiThuPhuong</code> vừa khởi tạo để truy cập vào không gian lưu trữ trống bên trong.</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">5</span>
-                                    <span><strong>Tạo tệp tin văn bản:</strong> Nhấp chuột phải vào khoảng trống -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Text Document</code>. Đặt tên là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChu.txt</code>. Nhấn Enter.</span>
+                                    <span><strong>Tạo tệp văn bản mới (Text Document):</strong> Nhấp chuột phải vào một khoảng trống -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Text Document</code>. Đặt tên ban đầu cho tệp tin này là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChu.txt</code> rồi nhấn phím Enter.</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">6</span>
-                                    <span><strong>Đổi tên tệp tin:</strong> Nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChu.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Rename</code> (hoặc phím tắt F2). Đổi tên thành <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code>. Nhấn Enter.</span>
+                                    <span><strong>Thực hiện đổi tên tệp tin:</strong> Nhấp chuột phải vào tệp tin <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChu.txt</code> -> chọn lệnh <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Rename</code> (hoặc bấm phím tắt F2). Tiến hành đổi tên tệp thành <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> và nhấn Enter để hoàn tất.</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/10 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">7</span>
-                                    <span><strong>Tạo thư mục con:</strong> Nhấp chuột phải trong thư mục chính -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Folder</code>. Đặt tên thư mục con là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>.</span>
+                                    <span><strong>Tạo thư mục con phân loại:</strong> Bên trong thư mục chính <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">ThucHanh_TranThiThuPhuong</code>, nhấp chuột phải -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Folder</code>. Đặt tên cho thư mục con mới này là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code> rồi nhấn Enter.</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/10 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">8</span>
-                                    <span><strong>Sao chép tệp tin (Copy & Paste):</strong> Nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Copy</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + C</code>). Nhấp đúp vào thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Paste</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + V</code>).</span>
+                                    <span><strong>Sao chép và dán tệp tin (Copy & Paste):</strong> Nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> -> chọn lệnh <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Copy</code> (hoặc chọn tệp rồi nhấn tổ hợp phím <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Ctrl + C</code>). Nhấp đúp chuột để vào thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải vào khoảng trống bên trong -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Paste</code> (hoặc nhấn tổ hợp phím <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Ctrl + V</code>).</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/10 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">9</span>
-                                    <span><strong>Di chuyển tệp tin (Cut & Paste):</strong> Trở lại thư mục chính. Tạo một tệp mới tên là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">DiChuyen.txt</code>. Nhấp chuột phải vào tệp -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Cut</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + X</code>). Nhấp đúp vào <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Paste</code> (hoặc <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + V</code>).</span>
+                                    <span><strong>Di chuyển tệp tin (Cut & Paste):</strong> Quay trở lại thư mục chính. Tạo thêm một tệp mới tên là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">DiChuyen.txt</code>. Nhấp chuột phải vào tệp này -> chọn lệnh <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Cut</code> (hoặc bấm tổ hợp phím <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Ctrl + X</code>). Nhấp đúp chuột vào thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải vào khoảng trống chọn lệnh <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Paste</code> (hoặc nhấn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Ctrl + V</code>). Tệp tin gốc sẽ biến mất khỏi vị trí cũ và chỉ tồn tại ở thư mục mới.</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/10 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">10</span>
-                                    <span><strong>Xóa tệp tin:</strong> Trong thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Delete</code> để tệp chuyển vào Thùng rác (Recycle Bin).</span>
+                                    <span><strong>Xóa tệp tin thông thường:</strong> Trong thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải vào tệp tin sao chép <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> -> chọn lệnh <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Delete</code>. Tệp tin sẽ biến mất khỏi thư mục và được tự động chuyển vào Thùng rác hệ thống (Recycle Bin).</span>
                                 </div>
                                 <div class="flex items-start gap-3 border-b border-white/10 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">11</span>
-                                    <span><strong>Xóa vĩnh viễn:</strong> Chọn tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">DiChuyen.txt</code>, nhấn giữ phím <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Shift</code> và nhấn phím <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Delete</code>, chọn đồng ý tại bảng cảnh báo hiện ra.</span>
+                                    <span><strong>Xóa vĩnh viễn tệp tin:</strong> Chọn tệp tin <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">DiChuyen.txt</code> đang nằm trong thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấn và giữ phím <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Shift</code>, sau đó nhấn phím <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Delete</code>. Một cảnh báo xác nhận xóa vĩnh viễn sẽ hiện ra trên màn hình. Nhấn đồng ý (Yes) để xóa vĩnh viễn tệp tin mà không đưa qua Thùng rác.</span>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">12</span>
-                                    <span><strong>Khôi phục từ Thùng rác:</strong> Tìm biểu tượng <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Recycle Bin</code> trên màn hình nền, nhấp đúp để mở. Tìm tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> đã xóa, nhấp chuột phải chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs font-semibold">Restore</code> để tệp quay về thư mục cũ.</span>
+                                    <span><strong>Khôi phục tệp từ Thùng rác:</strong> Trở về màn hình nền chính (Desktop), nhấp đúp chuột để mở biểu tượng Thùng rác (<code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Recycle Bin</code>). Tìm tệp tin <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> đã xóa ở bước 10, nhấp chuột phải vào tệp và chọn lệnh <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs font-semibold">Restore</code>. Tệp tin sẽ tự động quay trở lại vị trí lưu trữ ban đầu trong thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>.</span>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-violet-300"></i> Bài học rút ra (Lessons Learned):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Quản trị thư mục một cách có kế hoạch và chuẩn hóa giúp hình thành tư duy lưu trữ logic bền vững. Sự phối hợp của các phím tắt nhanh giúp tối ưu hóa đáng kể tốc độ phản hồi thao tác trên máy tính, tạo nền tảng vững vàng cho mọi công việc xử lý dữ liệu phức tạp hơn sau này.
+                            </p>
                         </div>
                     </div>
                 `
@@ -640,19 +654,24 @@
                 title: "Thẩm Định 10 Nguồn Học Thuật SFL Kinh Điển Theo Harvard Style",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
-                        <p class="font-light">
-                            Viết học thuật đòi hỏi tính chuẩn xác của tài liệu tham chiếu. Dưới đây là danh sách đầy đủ 10 tài liệu nghiên cứu ngôn ngữ học Hệ thống Chức năng (SFL) và viết học thuật chuẩn Harvard, được thẩm định qua 5 mức độ tin cậy phục vụ nghiên cứu khoa học chuyên nghiệp:
-                        </p>
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-blue-300"></i> Mục tiêu bài học (Goals):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Học tập cách tra cứu tư liệu học thuật từ các cổng dữ liệu chính thống, xây dựng năng lực thẩm định độ tin cậy của tài liệu khoa học thông qua NXB, tính phản biện, đồng thời thực hành kỹ thuật định dạng tham chiếu chuẩn Harvard trong soạn thảo báo cáo khoa học.
+                            </p>
+                        </div>
 
                         <!-- Full 10 Bibliography references -->
                         <div class="glass-card rounded-2xl p-5 border border-white/10">
                             <h4 class="font-serif font-bold text-white mb-3 flex items-center gap-2 text-sm sm:text-base">
-                                <i class="fa-solid fa-list-ol text-violet-400"></i> Danh mục 10 tài liệu tham khảo (Harvard Style):
+                                <i class="fa-solid fa-list-ol text-violet-400"></i> Danh mục 10 tài liệu tham khảo hoàn chỉnh (Harvard Style):
                             </h4>
                             <ol class="list-decimal list-inside space-y-2.5 text-xs sm:text-sm font-light">
                                 <li>Belmonte, I. và McCabe-Annega, M. (2001). 'Theme-Rheme patterns in L2 writing', <em>Functions of Language</em>, 8(2), tr. 143-177.</li>
                                 <li>Bloor, T. và Bloor, M. (2013). <em>The Functional Analysis of English: A Hallidayan Approach</em>. 3rd edn. London: Routledge.</li>
-                                <li>British Council (2024). <em>Teaching Academic Writing in Higher Education</em>. [Trực tuyến]. Có tại: <span class="text-blue-400">https://www.teachingenglish.org.uk/</span> (Truy cập: 21/03/2026).</li>
+                                <li>British Council (2024). <em>Teaching Academic Writing in Higher Education</em>. [Trực tuyến]. Có tại: <span class="text-blue-300">https://www.teachingenglish.org.uk/</span> (Truy cập: 21/03/2026).</li>
                                 <li>Davies, F. (2008). <em>Introduction to Multidisciplinary Research Writing</em>. London: Routledge.</li>
                                 <li>Eggins, S. (2004). <em>An Introduction to Systemic Functional Linguistics</em>. 2nd edn. London: Continuum.</li>
                                 <li>Gerot, L. và Wignell, P. (1994). <em>Making Sense of Functional Grammar</em>. Sydney: Gerd Stabler.</li>
@@ -694,7 +713,7 @@
                                         <td class="p-3">Routledge</td>
                                         <td class="p-3">Cao</td>
                                         <td class="p-3 text-center font-semibold text-violet-300">5</td>
-                                        <td class="p-3">Cung cấp phần giải thích trực quan, dễ hiểu về cơ chế cấu trúc ngữ pháp hệ thống.</td>
+                                        <td class="p-3">Cung cấp phần giải thích trực quan, dễ hiểu về cấu trúc ngữ pháp hệ thống.</td>
                                     </tr>
                                     <tr>
                                         <td class="p-3 font-semibold">3</td>
@@ -771,6 +790,15 @@
                                 </tbody>
                             </table>
                         </div>
+
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-violet-300"></i> Bài học rút ra (Lessons Learned):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Một nguồn tài liệu mở, dù được cập nhật tức thời, luôn cần phải được đối chiếu cẩn trọng với các tài liệu đã qua phản biện đồng khoa để đảm bảo độ tin cậy và sự liêm chính của một nghiên cứu học thuật chân chính.
+                            </p>
+                        </div>
                     </div>
                 `
             },
@@ -779,9 +807,14 @@
                 title: "Đối Chiếu 3 Phiên Bản Prompt Tóm Tắt Tác Phẩm Truyện Kiều",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
-                        <p class="font-light">
-                            Nghiên cứu so sánh trực quan hiệu quả đầu ra của ChatGPT khi được truy vấn bằng 3 phiên bản câu lệnh khác nhau để tóm tắt văn bản phân tích "Truyện Kiều":
-                        </p>
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-blue-300"></i> Mục tiêu bài học (Goals):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Trực quan so sánh và đánh giá các kỹ thuật viết Prompt khác nhau đối với mô hình LLM. Hiểu rõ phương pháp gán vai, thiết lập ngữ cảnh để tối ưu chất lượng kiểm soát đầu ra cho mục tiêu nghiên cứu văn học nước nhà.
+                            </p>
+                        </div>
 
                         <!-- Prompts Display Box -->
                         <div class="space-y-4">
@@ -802,7 +835,7 @@
                                 </p>
                             </div>
                             <div class="glass-card rounded-2xl p-4 border border-white/10 flex flex-col gap-1.5">
-                                <span class="text-xs uppercase font-semibold text-pink-300">Mức độ 3: Prompt nâng cao</span>
+                                <span class="text-xs uppercase font-semibold text-pink-400">Mức độ 3: Prompt nâng cao</span>
                                 <p class="text-xs sm:text-sm text-slate-200 italic font-mono bg-black/40 p-3 rounded">
                                     "Bạn là giảng viên đại học chuyên hướng dẫn đọc hiểu học thuật. Hãy thực hiện các bước sau:<br>
                                     • Xác định luận điểm trung tâm của văn bản.<br>
@@ -826,6 +859,15 @@
                                 <p><strong>5. Định hướng độc giả tiếp nhận:</strong> Điều chỉnh ngôn ngữ sư phạm thích hợp với năng lực lĩnh hội của học sinh/sinh viên.</p>
                             </div>
                         </div>
+
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-violet-300"></i> Bài học rút ra (Lessons Learned):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Để khai thác tối đa trí thông minh của AI, con người phải sở hữu kỹ năng đặt câu lệnh thông thái. Kỹ nghệ thiết kế Prompt (Prompt Engineering) biến mô hình từ một cuốn từ điển tĩnh thành trợ lý thông minh có chiều sâu.
+                            </p>
+                        </div>
                     </div>
                 `
             },
@@ -834,9 +876,14 @@
                 title: "Quản Trị Dự Án Nhóm: Phân Tích Hệ Sinh Thế Cộng Tác Trực Tuyến",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
-                        <p class="font-light">
-                            Hợp tác đám mây là chìa khóa duy trì dòng thông tin dự án trôi chảy. Báo cáo cá nhân này đi sâu phân tích hệ sinh thái làm việc trực tuyến bao gồm Google Drive, Google Docs và Microsoft Teams:
-                        </p>
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-blue-300"></i> Mục tiêu bài học (Goals):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Học tập cách tích hợp hệ sinh thái đám mây để điều phối, phân rã công việc cho các thành viên nhóm, xử lý và hạn chế xung đột chỉnh sửa đồng thời, duy trì tiến độ báo cáo nhất quán từ xa.
+                            </p>
+                        </div>
 
                         <!-- Pros & Cons List -->
                         <div class="space-y-4">
@@ -846,7 +893,7 @@
                                 </h4>
                                 <div class="text-xs sm:text-sm font-light space-y-1.5 text-slate-200">
                                     <p>• <strong>Ưu điểm:</strong> Phân chia danh mục thư mục khoa học, lưu giữ tệp tin tập trung, phân quyền xem/sửa linh hoạt.</p>
-                                    <p>• <strong>Hạn chế:</strong> Phụ thuộc Internet; dễ gây rối loạn file nếu không thống nhất cách đặt tên thư mục.</p>
+                                    <p>• <strong>Hạn chế:</strong> Phụ thuộc tuyệt đối vào mạng; dễ gây rối loạn file nếu không thống nhất cách đặt tên thư mục.</p>
                                 </div>
                             </div>
 
@@ -884,17 +931,31 @@
                                 <p class="italic text-slate-300">• Khắc phục: Duy trì họp chốt tuần trên MS Teams, lập biên bản tóm tắt ghim ở kênh chat và tag tên để cảnh báo tiến độ.</p>
                             </div>
                         </div>
+
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-violet-300"></i> Bài học rút ra (Lessons Learned):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Sự đồng bộ về kỷ luật số và thói quen chia sẻ thông tin văn hóa (quy chuẩn đặt tên tệp, quy định thời gian trả lời) đóng vai trò quyết định hiệu năng nhóm, lớn hơn rất nhiều so với giá trị kỹ thuật thuần túy của công cụ đám mây.
+                            </p>
+                        </div>
                     </div>
                 `
             },
             '5': {
                 subtitle: "Bài Tập 5 • Mục 5.4",
-                title: "Ứng Dụng Canva, DALL·E 3 Và ChatGPT Kiến Tạo Infographic Sư Phạm",
+                title: "Ứng Dụng Canva, DALL·E 3 Và ChatGPT Kiến Tạo Infographic Sư Phụ",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
-                        <p class="font-light">
-                            Dự án này là minh chứng rõ nét cho sự giao thoa giữa AI và dấu ấn cá nhân để kiến tạo infographic đồ họa sư phạm học thuật:
-                        </p>
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-blue-300"></i> Mục tiêu bài học (Goals):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Học tập cách tích hợp chuỗi công cụ AI tạo sinh đa năng (Text-to-Text, Text-to-Image) kết hợp phần mềm Canva đồ họa thiết kế để tạo lập một ấn phẩm truyền thông học đường chuẩn chỉ, sáng tạo.
+                            </p>
+                        </div>
 
                         <!-- Pipeline Block -->
                         <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
@@ -941,6 +1002,15 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-violet-300"></i> Bài học rút ra (Lessons Learned):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Công cụ AI tạo sinh dù có tối tân đến đâu cũng chỉ mang vai trò gợi mở dự thảo thô sơ. Chất lượng, thẩm mỹ và sự đúng đắn thực tế của sản phẩm đầu ra hoàn toàn thuộc về năng lực thẩm định và mài giũa của con người.
+                            </p>
+                        </div>
                     </div>
                 `
             },
@@ -949,27 +1019,32 @@
                 title: "Đạo Đức Sử Dụng AI Có Trách Nhiệm Trong Học Thuật & Nghiên Cứu",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
-                        <p class="font-light">
-                            Trong học thuật tại Đại học Quốc gia Hà Nội, liêm chính là kim chỉ nam hàng đầu. Dưới đây là phân tích trải nghiệm ứng dụng ChatGPT hỗ trợ làm bài luận Argumentative Essay chủ đề Biến đổi khí hậu kết hợp cùng việc xây dựng bộ quy tắc đạo đức cá nhân:
-                        </p>
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-blue-300"></i> Mục tiêu bài học (Goals):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Phân tích ranh giới đạo đức số của Đại học Quốc gia Hà Nội về ứng dụng trí tuệ nhân tạo, thiết lập bộ 7 nguyên tắc ứng xử học thuật nghiêm ngặt nhằm tránh phụ thuộc thụ động vào công nghệ hỗ trợ nghiên cứu.
+                            </p>
+                        </div>
 
                         <!-- Prompts for Essay -->
                         <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
                             <h4 class="font-serif font-bold text-white flex items-center gap-2 text-sm sm:text-base">
-                                <i class="fa-solid fa-terminal text-violet-400"></i> Tiến trình Prompt hỗ trợ viết bài luận:
+                                <i class="fa-solid fa-terminal text-violet-400"></i> Tiến trình Prompt hỗ trợ viết bài luận thực tế:
                             </h4>
                             <div class="space-y-3 font-light text-xs pl-2 text-slate-200">
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
-                                    <span class="font-bold text-white">Prompt 1 (Brainstorming):</span> "Suggest three main arguments supporting the idea that governments should take primary responsibility for addressing climate change." -> AI đề xuất 3 lập luận vĩ mô.
+                                    <span class="font-bold text-white">Prompt 1 (Brainstorming):</span> "Suggest three main arguments supporting the idea that governments should take primary responsibility for addressing climate change." -> AI đề xuất 3 lập luận vĩ mô hỗ trợ bài làm.
                                 </div>
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
-                                    <span class="font-bold text-white">Prompt 2 (Style Improvement):</span> "Improve the coherence and academic style of the following paragraph while keeping the original meaning." -> Nâng cấp sắc thái ngôn từ học thuật cho đoạn văn tự biên soạn.
+                                    <span class="font-bold text-white">Prompt 2 (Style Improvement):</span> "Improve the coherence and academic style of the following paragraph while keeping the original meaning." -> Nâng cấp liên kết từ vựng học thuật cho phần tự viết.
                                 </div>
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
-                                    <span class="font-bold text-white">Prompt 3 (Grammar Check & Explanation):</span> "Check whether the following paragraph contains grammatical errors, awkward expressions or repetitive words. Explain the mistakes..." -> Nhờ AI kiểm lỗi cấu trúc để tự sửa thay vì viết hộ hoàn toàn.
+                                    <span class="font-bold text-white">Prompt 3 (Grammar Check & Explanation):</span> "Check whether the following paragraph contains grammatical errors, awkward expressions or repetitive words. Explain the mistakes..." -> Nhờ AI phân tích lỗi sai thay vì chép bài thụ động hoàn toàn.
                                 </div>
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
-                                    <span class="font-bold text-white">Prompt 4 (Research Assistance):</span> "Recommend peer-reviewed evidence or official reports supporting the argument..." -> AI đề xuất các nguồn của IPCC, UN, OECD để sinh viên tự truy cập lấy dẫn chứng gốc.
+                                    <span class="font-bold text-white">Prompt 4 (Research Assistance):</span> "Recommend peer-reviewed evidence or official reports supporting the argument..." -> AI hướng dẫn nguồn nghiên cứu gốc của IPCC, UN để người viết tự tìm kiếm số liệu chuẩn xác.
                                 </div>
                             </div>
                         </div>
@@ -988,6 +1063,15 @@
                                 <div><strong>6. Học tập chủ động dài hạn:</strong> Sử dụng AI để học giải bài, phân tích lỗi sai thay vì tìm cách trả lời nhanh nhất đối phó.</div>
                                 <div><strong>7. Trách nhiệm cuối cùng:</strong> Tự chịu hoàn toàn trách nhiệm về tính trung thực, chính xác và sự liêm chính của bài làm đã nộp.</div>
                             </div>
+                        </div>
+
+                        <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
+                            <h4 class="font-serif font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-graduation-cap text-violet-300"></i> Bài học rút ra (Lessons Learned):
+                            </h4>
+                            <p class="font-light text-slate-200 text-sm">
+                                Liêm chính học thuật trong kỷ nguyên số phụ thuộc vào mức độ giữ vững thế chủ động của người học. Việc tuân thủ đạo đức công nghệ bảo vệ sự bền vững, minh bạch của quá trình khám phá tri thức học tập cá nhân.
+                            </p>
                         </div>
                     </div>
                 `
