@@ -25,8 +25,8 @@
                             purple: '#d8b4fe',
                             blue: '#93c5fd',
                             pink: '#fbcfe8',
-                            dark: '#080a21',
-                            panel: 'rgba(18, 22, 58, 0.88)'
+                            dark: '#0a0c24',
+                            panel: 'rgba(15, 18, 48, 0.88)'
                         }
                     }
                 }
@@ -40,60 +40,60 @@
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #060718;
+            background: #0b0c20;
         }
         ::-webkit-scrollbar-thumb {
-            background: rgba(216, 180, 254, 0.5);
+            background: rgba(216, 180, 254, 0.4);
             border-radius: 999px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(216, 180, 254, 0.9);
+            background: rgba(216, 180, 254, 0.8);
         }
 
         /* Luminous Glassmorphism - Bright, colorful and translucent */
         .glass-hud {
-            background: rgba(18, 22, 58, 0.85); /* Radiant purple-indigo frosted glass */
+            background: rgba(16, 20, 55, 0.85); /* Vibrant indigo glass */
             backdrop-filter: blur(24px) saturate(180%);
             -webkit-backdrop-filter: blur(24px) saturate(180%);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 10px 40px rgba(167, 132, 252, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 10px 40px rgba(138, 43, 226, 0.15);
         }
         
         .glass-card {
-            background: rgba(24, 30, 78, 0.78); /* Deep translucent purple card body */
+            background: rgba(22, 27, 68, 0.82); /* High contrast colorful indigo */
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         }
         
         .glass-card:hover {
-            background: rgba(32, 40, 100, 0.92);
-            border-color: rgba(216, 180, 254, 0.7);
-            box-shadow: 0 20px 40px rgba(167, 132, 252, 0.4);
-            transform: translateY(-5px) scale(1.015);
+            background: rgba(30, 36, 88, 0.95);
+            border-color: rgba(216, 180, 254, 0.6);
+            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.35);
+            transform: translateY(-4px) scale(1.01);
         }
 
-        /* High Text Contrast Shadows */
+        /* Text Contrast Shadows for Brighter backgrounds */
         .text-readable {
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
         }
         
         .title-readable {
-            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.85), 0 0 20px rgba(216, 180, 254, 0.35);
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.85), 0 0 20px rgba(216, 180, 254, 0.3);
         }
 
-        /* Vibrant gradient text styling */
+        /* Vibrant gradient colors */
         .text-gradient-cosmic {
-            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 45%, #fbcfe8 75%, #d8b4fe 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 45%, #c084fc 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Glowing background overlay - Bright Luminous style allowing back.jpg nebula lights to shine */
+        /* Bright glowing background with nebula shine */
         .bg-fixed-back {
-            background-image: linear-gradient(rgba(14, 11, 40, 0.42), rgba(15, 23, 45, 0.52)), url('back.jpg');
+            background-image: linear-gradient(rgba(14, 11, 36, 0.45), rgba(15, 23, 42, 0.55)), url('back.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -111,8 +111,8 @@
 
         /* Glowing Constellation Connection Path */
         .constellation-line {
-            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.7) 15%, rgba(244, 114, 182, 0.7) 85%, transparent);
-            box-shadow: 0 0 10px rgba(216, 180, 254, 0.5);
+            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.6) 15%, rgba(244, 114, 182, 0.6) 85%, transparent);
+            box-shadow: 0 0 10px rgba(216, 180, 254, 0.4);
         }
 
         /* Tab Switch Animation */
@@ -140,7 +140,7 @@
             </a>
             
             <div class="flex items-center gap-6">
-                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/50 to-pink-500/50 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/20 relative z-50">
+                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/50 to-pink-500/50 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/20">
                     <i class="fab fa-google-drive"></i> Xem bài tập trên GG drive
                 </a>
             </div>
@@ -584,7 +584,7 @@
                         <!-- 12-Step Vertical Timeline -->
                         <div class="glass-card rounded-2xl p-6 border border-white/10 flex flex-col gap-4">
                             <h4 class="font-serif font-bold text-white mb-2 flex items-center gap-2">
-                                <i class="fa-solid fa-list-ol text-violet-400"></i> Quy trình thực hiện 12 bước chi tiết:
+                                <i class="fa-solid fa-list-ol text-violet-400"></i> Quy trình thực hiện chuẩn hóa 12 bước:
                             </h4>
                             <div class="space-y-4 font-light text-xs sm:text-sm pl-2">
                                 <div class="flex items-start gap-3 border-b border-white/5 pb-2">
@@ -671,7 +671,7 @@
                             <ol class="list-decimal list-inside space-y-2.5 text-xs sm:text-sm font-light">
                                 <li>Belmonte, I. và McCabe-Annega, M. (2001). 'Theme-Rheme patterns in L2 writing', <em>Functions of Language</em>, 8(2), tr. 143-177.</li>
                                 <li>Bloor, T. và Bloor, M. (2013). <em>The Functional Analysis of English: A Hallidayan Approach</em>. 3rd edn. London: Routledge.</li>
-                                <li>British Council (2024). <em>Teaching Academic Writing in Higher Education</em>. [Trực tuyến]. Có tại: <span class="text-blue-300">https://www.teachingenglish.org.uk/</span> (Truy cập: 21/03/2026).</li>
+                                <li>British Council (2024). <em>Teaching Academic Writing in Higher Education</em>. [Trực tuyến]. Có tại: <span class="text-blue-400">https://www.teachingenglish.org.uk/</span> (Truy cập: 21/03/2026).</li>
                                 <li>Davies, F. (2008). <em>Introduction to Multidisciplinary Research Writing</em>. London: Routledge.</li>
                                 <li>Eggins, S. (2004). <em>An Introduction to Systemic Functional Linguistics</em>. 2nd edn. London: Continuum.</li>
                                 <li>Gerot, L. và Wignell, P. (1994). <em>Making Sense of Functional Grammar</em>. Sydney: Gerd Stabler.</li>
@@ -713,7 +713,7 @@
                                         <td class="p-3">Routledge</td>
                                         <td class="p-3">Cao</td>
                                         <td class="p-3 text-center font-semibold text-violet-300">5</td>
-                                        <td class="p-3">Cung cấp phần giải thích trực quan, dễ hiểu về cấu trúc ngữ pháp hệ thống.</td>
+                                        <td class="p-3">Cung cấp phần giải thích trực quan, dễ hiểu về cơ chế cấu trúc ngữ pháp hệ thống.</td>
                                     </tr>
                                     <tr>
                                         <td class="p-3 font-semibold">3</td>
@@ -945,7 +945,7 @@
             },
             '5': {
                 subtitle: "Bài Tập 5 • Mục 5.4",
-                title: "Ứng Dụng Canva, DALL·E 3 Và ChatGPT Kiến Tạo Infographic Sư Phụ",
+                title: "Ứng Dụng Canva, DALL·E 3 Và ChatGPT Kiến Tạo Infographic Sư Phạm",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
                         <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
@@ -1038,7 +1038,7 @@
                                     <span class="font-bold text-white">Prompt 1 (Brainstorming):</span> "Suggest three main arguments supporting the idea that governments should take primary responsibility for addressing climate change." -> AI đề xuất 3 lập luận vĩ mô hỗ trợ bài làm.
                                 </div>
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
-                                    <span class="font-bold text-white">Prompt 2 (Style Improvement):</span> "Improve the coherence and academic style of the following paragraph while keeping the original meaning." -> Nâng cấp liên kết từ vựng học thuật cho phần tự viết.
+                                    <span class="font-bold text-white">Prompt 2 (Language support):</span> "Improve the coherence and academic style of the following paragraph while keeping the original meaning." -> Nâng cấp liên kết từ vựng học thuật cho phần tự viết.
                                 </div>
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
                                     <span class="font-bold text-white">Prompt 3 (Grammar Check & Explanation):</span> "Check whether the following paragraph contains grammatical errors, awkward expressions or repetitive words. Explain the mistakes..." -> Nhờ AI phân tích lỗi sai thay vì chép bài thụ động hoàn toàn.
@@ -1173,6 +1173,38 @@
                     <p><strong>Nhiệm vụ xử lý:</strong> Tách nền, xóa bỏ toàn bộ chữ rác của AI.</p>
                     <p class="text-emerald-400"><strong>Kết quả đầu ra:</strong> Thay thế 100% bằng chữ tự biên soạn chuẩn xác tuyệt đối.</p>
                 `;
+            }
+        }
+
+        // Dual-Tab Content Switcher Logic inside Left Capsule (EXPLICIT GLOBAL BINDING FIXED)
+        window.switchTab = function(tabId) {
+            const goalsBtn = document.getElementById('goals-tab-btn');
+            const reflectionBtn = document.getElementById('reflection-tab-btn');
+            const goalsContent = document.getElementById('goals-tab-content');
+            const reflectionContent = document.getElementById('reflection-tab-content');
+
+            if (!goalsBtn || !reflectionBtn || !goalsContent || !reflectionContent) return;
+
+            if (tabId === 'goals-tab') {
+                // Toggle Buttons Classes using classList for robustness
+                goalsBtn.classList.add('bg-violet-600/50', 'border-violet-400/30', 'text-white');
+                goalsBtn.classList.remove('text-slate-300');
+                reflectionBtn.classList.remove('bg-pink-600/50', 'border-pink-400/30', 'text-white');
+                reflectionBtn.classList.add('text-slate-300');
+                
+                // Toggle Contents Visibility
+                goalsContent.classList.remove('hidden');
+                reflectionContent.classList.add('hidden');
+            } else {
+                // Toggle Buttons Classes using classList for robustness
+                reflectionBtn.classList.add('bg-pink-600/50', 'border-pink-400/30', 'text-white');
+                reflectionBtn.classList.remove('text-slate-300');
+                goalsBtn.classList.remove('bg-violet-600/50', 'border-violet-400/30', 'text-white');
+                goalsBtn.classList.add('text-slate-300');
+                
+                // Toggle Contents Visibility
+                reflectionContent.classList.remove('hidden');
+                goalsContent.classList.add('hidden');
             }
         }
     </script>
