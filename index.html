@@ -25,8 +25,8 @@
                             purple: '#d8b4fe',
                             blue: '#93c5fd',
                             pink: '#fbcfe8',
-                            dark: '#0f1026',
-                            panel: 'rgba(15, 18, 48, 0.85)'
+                            dark: '#0a0b1e',
+                            panel: 'rgba(12, 14, 42, 0.92)'
                         }
                     }
                 }
@@ -40,60 +40,60 @@
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #0b0c20;
+            background: #020412;
         }
         ::-webkit-scrollbar-thumb {
-            background: rgba(216, 180, 254, 0.4);
+            background: rgba(216, 180, 254, 0.5);
             border-radius: 999px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(216, 180, 254, 0.8);
+            background: rgba(216, 180, 254, 0.9);
         }
 
         /* Luminous Glassmorphism - Brighter and more colorful */
         .glass-hud {
-            background: rgba(16, 20, 55, 0.85); /* Vibrant indigo glass */
+            background: rgba(14, 16, 48, 0.9); /* Luminous Indigo Glass */
             backdrop-filter: blur(24px) saturate(180%);
             -webkit-backdrop-filter: blur(24px) saturate(180%);
             border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 10px 40px rgba(138, 43, 226, 0.15);
+            box-shadow: 0 10px 40px rgba(138, 43, 226, 0.25);
         }
         
         .glass-card {
-            background: rgba(22, 27, 68, 0.78); /* High contrast colorful indigo */
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            background: rgba(18, 22, 58, 0.85); /* Rich colorful indigo panel */
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
             transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         }
         
         .glass-card:hover {
-            background: rgba(30, 36, 88, 0.9);
-            border-color: rgba(216, 180, 254, 0.6);
-            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.35);
-            transform: translateY(-4px) scale(1.01);
+            background: rgba(28, 34, 85, 0.95);
+            border-color: rgba(216, 180, 254, 0.7);
+            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.45);
+            transform: translateY(-5px) scale(1.02);
         }
 
-        /* Text Contrast Shadows for Brighter backgrounds */
+        /* Contrast Shadows for Text Readability */
         .text-readable {
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
         }
         
         .title-readable {
-            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.85), 0 0 20px rgba(216, 180, 254, 0.3);
+            text-shadow: 0 3px 12px rgba(0, 0, 0, 0.9), 0 0 25px rgba(216, 180, 254, 0.45);
         }
 
         /* Vibrant gradient colors */
         .text-gradient-cosmic {
-            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 40%, #fbcfe8 75%, #d8b4fe 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #fbcfe8 50%, #d8b4fe 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         /* Bright glowing background with nebula shine */
         .bg-fixed-back {
-            background-image: linear-gradient(rgba(14, 11, 36, 0.45), rgba(15, 23, 42, 0.55)), url('back.jpg');
+            background-image: linear-gradient(rgba(10, 8, 32, 0.4), rgba(12, 18, 45, 0.5)), url('back.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -101,34 +101,35 @@
 
         /* Keyframe animations */
         @keyframes float-orbit {
-            0% { transform: rotate(0deg) translateY(-5px) rotate(0deg); }
-            50% { transform: rotate(180deg) translateY(5px) rotate(-180deg); }
-            100% { transform: rotate(360deg) translateY(-5px) rotate(-360deg); }
+            0% { transform: rotate(0deg) translateY(-6px) rotate(0deg); }
+            50% { transform: rotate(180deg) translateY(6px) rotate(-180deg); }
+            100% { transform: rotate(360deg) translateY(-6px) rotate(-360deg); }
         }
         .orbit-float {
-            animation: float-orbit 18s linear infinite;
+            animation: float-orbit 16s linear infinite;
         }
 
         /* Glowing Constellation Connection Path */
         .constellation-line {
-            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.6) 15%, rgba(244, 114, 182, 0.6) 85%, transparent);
-            box-shadow: 0 0 10px rgba(216, 180, 254, 0.4);
+            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.7) 15%, rgba(244, 114, 182, 0.7) 85%, transparent);
+            box-shadow: 0 0 12px rgba(216, 180, 254, 0.5);
         }
 
-        /* Tab Switch Animation */
-        .tab-content {
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-        .tab-content.hidden {
-            display: none;
+        /* Scroll Reveal base style */
+        .reveal {
             opacity: 0;
-            transform: translateY(10px);
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body class="bg-cosmic-dark text-slate-100 font-sans antialiased overflow-x-hidden bg-fixed-back relative">
 
-    <!-- Interactive Particle Background Canvas -->
+    <!-- Interactive Particle Background Canvas (Must be pointer-events-none) -->
     <canvas id="starfield" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
 
     <!-- HEADS-UP DISPLAY (HUD) NAVIGATION -->
@@ -140,7 +141,7 @@
             </a>
             
             <div class="flex items-center gap-6">
-                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/50 to-pink-500/50 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/20">
+                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/60 to-pink-500/60 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/30 relative z-50">
                     <i class="fab fa-google-drive"></i> Xem bài tập trên GG drive
                 </a>
             </div>
@@ -152,15 +153,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             <!-- LEFT COLUMN: PERSISTENT HUD CONTROL PANEL (33% Width on Desktop) -->
-            <aside class="lg:col-span-4 lg:sticky lg:top-28 flex flex-col gap-6">
+            <aside class="lg:col-span-4 lg:sticky lg:top-28 flex flex-col gap-6 relative z-30">
                 
                 <!-- Profile Capsule Card -->
                 <div class="glass-hud rounded-3xl p-6 relative overflow-hidden shadow-2xl">
-                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-violet-400/30 to-pink-400/30 blur-md opacity-40 -z-10"></div>
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-violet-400/30 to-pink-400/30 blur-md opacity-45 -z-10"></div>
                     
                     <!-- Avatar Orbit Area -->
                     <div class="relative w-40 h-40 mx-auto mb-6 flex items-center justify-center">
-                        <div class="absolute inset-0 rounded-full border-2 border-dashed border-violet-400/40 orbit-float"></div>
+                        <div class="absolute inset-0 rounded-full border-2 border-dashed border-violet-400/50 orbit-float"></div>
                         <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-white/30 shadow-xl relative z-10">
                             <img src="Hình 1.jpg" alt="Trần Thị Thu Phương" class="w-full h-full object-cover">
                         </div>
@@ -174,7 +175,7 @@
                         <div class="h-px bg-white/20 my-3"></div>
                         
                         <!-- Metadata block -->
-                        <div class="flex flex-col gap-2.5 text-xs sm:text-sm text-slate-100 text-left font-light px-2 text-readable">
+                        <div class="flex flex-col gap-2.5 text-sm text-slate-100 text-left font-light px-2 text-readable">
                             <div class="flex items-center gap-3">
                                 <i class="fa-solid fa-graduation-cap text-violet-300 w-5"></i>
                                 <span>Ngôn ngữ & Văn hóa Anh</span>
@@ -192,10 +193,10 @@
                 </div>
 
                 <!-- Interactive Dual-Tab Panel (Mục tiêu vs Tổng kết) -->
-                <div class="glass-hud rounded-3xl p-6 flex flex-col gap-4 shadow-2xl">
+                <div class="glass-hud rounded-3xl p-6 flex flex-col gap-4 shadow-2xl relative z-30">
                     <!-- Tab Headers -->
-                    <div class="flex bg-slate-950/60 rounded-full p-1 border border-white/10 text-xs sm:text-sm font-semibold">
-                        <button onclick="switchTab('goals-tab')" id="goals-tab-btn" class="w-1/2 py-2 rounded-full text-center text-white bg-violet-600/50 border border-violet-400/30 transition duration-300">
+                    <div class="flex bg-slate-950/70 rounded-full p-1 border border-white/15 text-xs sm:text-sm font-semibold">
+                        <button onclick="switchTab('goals-tab')" id="goals-tab-btn" class="w-1/2 py-2 rounded-full text-center text-white bg-violet-600/50 border border-violet-400/30 transition duration-300 shadow-md">
                             <i class="fa-solid fa-bullseye mr-1.5"></i> Mục Tiêu
                         </button>
                         <button onclick="switchTab('reflection-tab')" id="reflection-tab-btn" class="w-1/2 py-2 rounded-full text-center text-slate-300 hover:text-white transition duration-300">
@@ -245,7 +246,7 @@
             </aside>
 
             <!-- RIGHT COLUMN: THE EXPLORATION ORBIT (67% Width on Desktop) -->
-            <section class="lg:col-span-8 flex flex-col gap-12 relative pl-4 md:pl-8">
+            <section class="lg:col-span-8 flex flex-col gap-12 relative pl-4 md:pl-8 z-20">
                 
                 <!-- Dynamic Header -->
                 <div class="flex flex-col gap-3">
@@ -257,7 +258,7 @@
                 </div>
 
                 <!-- Google Drive CTA Banner before timeline -->
-                <div class="glass-card rounded-2xl p-5 border border-violet-400/40 flex flex-col sm:flex-row justify-between items-center gap-4 shadow-xl">
+                <div class="glass-card rounded-2xl p-5 border border-violet-400/40 flex flex-col sm:flex-row justify-between items-center gap-4 shadow-xl relative z-30">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center text-violet-300 text-lg">
                             <i class="fab fa-google-drive"></i>
@@ -267,7 +268,7 @@
                             <p class="text-xs text-slate-300">Xem trực tiếp tệp PDF báo cáo, hình ảnh chất lượng cao trên Drive.</p>
                         </div>
                     </div>
-                    <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-4 py-2 text-xs rounded-full bg-violet-600/50 hover:bg-violet-600 border border-violet-400/50 text-white font-bold transition shadow-md">
+                    <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-4 py-2 text-xs rounded-full bg-violet-600/50 hover:bg-violet-600 border border-violet-400/50 text-white font-bold transition shadow-md relative z-30">
                         Truy cập Drive
                     </a>
                 </div>
@@ -278,8 +279,8 @@
                     <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 constellation-line z-0"></div>
 
                     <!-- CARD 1: Left Aligned on Desktop -->
-                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal">
-                        <div class="w-full md:w-[45%] z-10">
+                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
+                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
                             <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(1)">
                                 <span class="text-xs text-blue-300 font-bold uppercase tracking-widest">Bài Tập 1 • Mục 1.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Quản Lý Thư Mục (12 Bước)</h3>
@@ -296,11 +297,11 @@
                     </div>
 
                     <!-- CARD 2: Right Aligned on Desktop -->
-                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal">
+                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
                         <div class="w-0 md:w-[45%]"></div>
                         <!-- Timeline Node Point -->
                         <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#a5b4fc]"></div>
-                        <div class="w-full md:w-[45%] z-10">
+                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
                             <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(2)">
                                 <span class="text-xs text-indigo-300 font-bold uppercase tracking-widest">Bài Tập 2 • Mục 2.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Đánh Giá 10 Tài Liệu SFL</h3>
@@ -314,8 +315,8 @@
                     </div>
 
                     <!-- CARD 3: Left Aligned on Desktop -->
-                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal">
-                        <div class="w-full md:w-[45%] z-10">
+                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
+                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
                             <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(3)">
                                 <span class="text-xs text-purple-300 font-bold uppercase tracking-widest">Bài Tập 3 • Mục 3.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Kỹ Nghệ Thiết Kế Prompt</h3>
@@ -332,11 +333,11 @@
                     </div>
 
                     <!-- CARD 4: Right Aligned on Desktop -->
-                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal">
+                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
                         <div class="w-0 md:w-[45%]"></div>
                         <!-- Timeline Node Point -->
                         <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-pink-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#fbcfe8]"></div>
-                        <div class="w-full md:w-[45%] z-10">
+                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
                             <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(4)">
                                 <span class="text-xs text-pink-300 font-bold uppercase tracking-widest">Bài Tập 4 • Mục 4.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Hợp Tác Nhóm Đám Mây</h3>
@@ -350,8 +351,8 @@
                     </div>
 
                     <!-- CARD 5: Left Aligned on Desktop -->
-                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal">
-                        <div class="w-full md:w-[45%] z-10">
+                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
+                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
                             <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(5)">
                                 <span class="text-xs text-cyan-300 font-bold uppercase tracking-widest">Bài Tập 5 • Mục 5.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">AI Sáng Tạo Infographic</h3>
@@ -368,11 +369,11 @@
                     </div>
 
                     <!-- CARD 6: Right Aligned on Desktop -->
-                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal">
+                    <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
                         <div class="w-0 md:w-[45%]"></div>
                         <!-- Timeline Node Point -->
                         <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-amber-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#fde047]"></div>
-                        <div class="w-full md:w-[45%] z-10">
+                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
                             <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(6)">
                                 <span class="text-xs text-amber-300 font-bold uppercase tracking-widest">Bài Tập 6 • Mục 6.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Đạo Đức Ứng Dụng AI</h3>
@@ -648,7 +649,7 @@
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
                         <p class="font-light">
-                            Viết học thuật đòi hỏi tính chuẩn xác của tài liệu tham chiếu. Dưới đây là danh sách đầy đủ 10 tài liệu nghiên cứu ngôn ngữ học Hệ thống Chức năng (SFL) và viết học thuật chuẩn Harvard, được thẩm định qua 5 mức độ tin cậy phục vụ nghiên cứu khoa học chuyên nghiệp:
+                            Tại ULIS, viết học thuật đòi hỏi tính chuẩn xác của tài liệu tham chiếu. Dưới đây là danh sách đầy đủ 10 tài liệu nghiên cứu ngôn ngữ học Hệ thống Chức năng (SFL) và viết học thuật chuẩn Harvard, được thẩm định qua 5 mức độ tin cậy phục vụ nghiên cứu khoa học chuyên nghiệp:
                         </p>
 
                         <!-- Full 10 Bibliography references -->
@@ -710,7 +711,7 @@
                                         <td class="p-3">Journal</td>
                                         <td class="p-3">Trung bình</td>
                                         <td class="p-3 text-center font-semibold text-violet-300">5</td>
-                                        <td class="p-3">Nghiên cứu thực nghiệm giá trị trực tiếp về thực tiễn giảng dạy Theme-Rheme.</td>
+                                        <td class="p-3">Nghiên cứu thực nghiệm trực tiếp về ứng dụng Theme-Rheme giảng dạy thực tế.</td>
                                     </tr>
                                     <tr>
                                         <td class="p-3 font-semibold">4</td>
@@ -719,7 +720,7 @@
                                         <td class="p-3">Journal</td>
                                         <td class="p-3">Trung bình</td>
                                         <td class="p-3 text-center font-semibold text-violet-300">4</td>
-                                        <td class="p-3">Mô tả cách ứng dụng lý thuyết chức năng vào thực tiễn viết học thuật.</td>
+                                        <td class="p-3">Mô tả cách ứng dụng trực tiếp lý thuyết chức năng vào thực tiễn viết học thuật.</td>
                                     </tr>
                                     <tr>
                                         <td class="p-3 font-semibold">5</td>
@@ -755,7 +756,7 @@
                                         <td class="p-3">Routledge</td>
                                         <td class="p-3">Trung bình</td>
                                         <td class="p-3 text-center font-semibold text-violet-300">4</td>
-                                        <td class="p-3">Tập trung định hướng sâu các kỹ năng viết đa ngành học thuật tối ưu.</td>
+                                        <td class="p-3">Tài liệu tốt tập trung định hướng các kỹ năng viết đa ngành học thuật tối ưu.</td>
                                     </tr>
                                     <tr>
                                         <td class="p-3 font-semibold">9</td>
@@ -828,7 +829,7 @@
                             <div class="space-y-3 font-light text-xs sm:text-sm pl-2">
                                 <p><strong>1. Mô tả chi tiết nhiệm vụ (Specificity):</strong> Cụ thể hóa yêu cầu tóm tắt và số từ khống chế sự phỏng đoán ngẫu nhiên của AI.</p>
                                 <p><strong>2. Định dạng cấu trúc chặt chẽ:</strong> Kết xuất dạng bảng tối ưu khả năng đọc, đánh giá và đối chiếu các luận điểm khoa học.</p>
-                                <p><strong>3. Gán vai trò cụ thể (Role-playing):</strong> Thiết lập tư cách "Giảng viên đại học" giúp mô hình sử dụng chuẩn văn phong học thuật sư phạm.</p>
+                                <p><strong>3. Kỹ thuật phân vai (Role-playing):</strong> Thiết lập tư cách "Giảng viên đại học" giúp mô hình sử dụng chuẩn văn phong học thuật sư phạm.</p>
                                 <p><strong>4. Chia nhỏ tác vụ phức tạp:</strong> Định hướng AI đi theo lộ trình lọc ý chính -> lập luận phụ -> tóm tắt giúp tránh sót thông tin trong ảnh gốc.</p>
                                 <p><strong>5. Định hướng độc giả tiếp nhận:</strong> Điều chỉnh ngôn ngữ sư phạm thích hợp với năng lực lĩnh hội của học sinh/sinh viên.</p>
                             </div>
@@ -842,7 +843,7 @@
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
                         <p class="font-light">
-                            Hợp tác đám mây quyết định tốc độ hoàn thành báo cáo nhóm. Bài thực hành cá nhân phân tích trải nghiệm thực tế với Google Drive, Docs và Teams:
+                            Hợp tác đám mây là chìa khóa duy trì dòng thông tin dự án trôi chảy. Báo cáo cá nhân này đi sâu phân tích hệ sinh thái làm việc trực tuyến bao gồm Google Drive, Google Docs và Microsoft Teams:
                         </p>
 
                         <!-- Pros & Cons List -->
@@ -858,7 +859,7 @@
                             </div>
 
                             <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-2">
-                                <h4 class="font-serif font-semibold text-blue-300 flex items-center gap-2">
+                                <h4 class="font-serif font-semibold text-blue-400 flex items-center gap-2">
                                     <i class="fa-regular fa-file-lines"></i> Google Docs - Đồng soạn thảo thời gian thực
                                 </h4>
                                 <div class="text-xs sm:text-sm font-light space-y-1.5 text-slate-200">
@@ -872,8 +873,8 @@
                                     <i class="fab fa-microsoft"></i> Microsoft Teams - Giao tiếp tập trung
                                 </h4>
                                 <div class="text-xs sm:text-sm font-light space-y-1.5 text-slate-200">
-                                    <p>• <strong>Ưu điểm:</strong> Hệ thống hóa các kênh trao đổi dự án riêng biệt, gọi điện họp nhóm nhanh chóng, tích hợp phân công lịch việc.</p>
-                                    <p>• <strong>Hạn chế:</strong> Số lượng thông báo lớn dễ trôi tin khẩn; thành viên ban đầu còn bỡ ngỡ với các tính năng phối hợp sâu.</p>
+                                    <p>• <strong>Ưu điểm:</strong> Tích hợp các tính năng chat, call video và quản lý tiến trình tập trung, ghi chép biên bản cuộc họp khoa học.</p>
+                                    <p>• <strong>Hạn chế:</strong> Tần suất thông báo lớn dễ làm trôi thông tin khẩn cấp; một số thành viên ban đầu còn lúng túng khi khai thác hết tính năng.</p>
                                 </div>
                             </div>
                         </div>
@@ -881,13 +882,13 @@
                         <!-- Solutions implemented -->
                         <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
                             <h4 class="font-serif font-bold text-white flex items-center gap-2 text-sm sm:text-base">
-                                <i class="fa-solid fa-triangle-exclamation"></i> Thách thức thực tế & Giải pháp phối hợp nhóm
+                                <i class="fa-solid fa-triangle-exclamation"></i> Thách thức gặp phải & Giải pháp khắc phục
                             </h4>
                             <div class="space-y-3 font-light text-xs sm:text-sm text-slate-200 pl-2">
-                                <p><strong>1. Trùng lặp chỉnh sửa văn bản Docs:</strong> Do thành viên cùng sửa một phân đoạn làm biến dạng bố cục.</p>
-                                <p class="italic text-slate-300">• Khắc phục: Phân rõ khu vực biên soạn cho từng cá nhân, quy định khung giờ nộp bài độc lập và khôi phục khi lỗi bằng Lịch sử phiên bản.</p>
+                                <p><strong>1. Xung đột chỉnh sửa đồng thời trên Docs:</strong> Khi các thành viên viết cùng phân đoạn gây đảo lộn bố cục.</p>
+                                <p class="italic text-slate-300">• Khắc phục: Phân rõ khu vực biên soạn cho từng cá nhân, quy định mốc thời gian hoàn thành độc lập và khôi phục khi lỗi bằng Lịch sử phiên bản.</p>
                                 <div class="h-px bg-white/10"></div>
-                                <p><strong>2. Trôi thông tin trao đổi:</strong> Do thành viên lệch múi giờ học tập và làm việc cá nhân dẫn đến chậm trễ phản hồi.</p>
+                                <p><strong>2. Trễ thông tin giao tiếp trực tuyến:</strong> Thành viên có thời gian sinh hoạt lệch nhau gây chậm trễ cập nhật công việc.</p>
                                 <p class="italic text-slate-300">• Khắc phục: Duy trì họp chốt tuần trên MS Teams, lập biên bản tóm tắt ghim ở kênh chat và tag tên để cảnh báo tiến độ.</p>
                             </div>
                         </div>
@@ -938,7 +939,7 @@
                                 <i class="fa-solid fa-triangle-exclamation"></i> Thách thức kỹ thuật của AI & Vai trò biên tập của con người
                             </h4>
                             <div class="space-y-3 font-light text-xs sm:text-sm pl-2">
-                                <p><strong>Hạn chế của máy móc:</strong> Ảnh minh họa do AI tạo ra thường bị lỗi vẽ chữ tiếng Việt bị méo hoặc sai chính tả nặng nề. Bố cục tự động Canva đề xuất đôi khi chưa đồng đều về khoảng cách.</p>
+                                <p><strong>Hạn chế của máy móc:</strong> Ảnh minh họa do AI tạo ra thường bị lỗi vẽ chữ tiếng Việt bị méo hoặc sai chính tả nặng nề. Bố cục tự động Canva đề xuất đôi khi chưa tối ưu được khoảng cách.</p>
                                 <div class="h-px bg-white/10"></div>
                                 <p><strong>Sự can thiệp sáng tạo cá nhân (Quyết định chất lượng):</strong></p>
                                 <ul class="list-disc list-inside space-y-1.5 pl-2 text-slate-200 text-xs sm:text-sm">
@@ -963,7 +964,7 @@
                         <!-- Prompts for Essay -->
                         <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
                             <h4 class="font-serif font-bold text-white flex items-center gap-2 text-sm sm:text-base">
-                                <i class="fa-solid fa-terminal text-violet-300"></i> Tiến trình Prompt hỗ trợ viết bài luận:
+                                <i class="fa-solid fa-terminal text-violet-400"></i> Tiến trình Prompt hỗ trợ viết bài luận:
                             </h4>
                             <div class="space-y-3 font-light text-xs pl-2 text-slate-200">
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
@@ -984,7 +985,7 @@
                         <!-- 7 Principles Manifest -->
                         <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-3">
                             <h4 class="font-serif font-bold text-white flex items-center gap-2 text-sm sm:text-base">
-                                <i class="fa-solid fa-shield-halved text-violet-300"></i> Bản Tuyên Ngôn 7 Nguyên Tắc Đạo Đức Cá Nhân
+                                <i class="fa-solid fa-shield-halved text-violet-400"></i> Bản Tuyên Ngôn 7 Nguyên Tắc Đạo Đức Cá Nhân
                             </h4>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm font-light pl-2">
                                 <div><strong>1. AI là trợ lý, không thay thế tư duy:</strong> Tự xây dựng lập luận, luận điểm chính bằng bộ óc cá nhân, không sao chép thụ động.</div>
