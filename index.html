@@ -25,8 +25,8 @@
                             purple: '#d8b4fe',
                             blue: '#93c5fd',
                             pink: '#fbcfe8',
-                            dark: '#0a0b1e',
-                            panel: 'rgba(12, 14, 42, 0.92)'
+                            dark: '#0a0c24',
+                            panel: 'rgba(15, 18, 48, 0.88)'
                         }
                     }
                 }
@@ -40,60 +40,60 @@
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #020412;
+            background: #060714;
         }
         ::-webkit-scrollbar-thumb {
-            background: rgba(216, 180, 254, 0.5);
+            background: rgba(216, 180, 254, 0.4);
             border-radius: 999px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(216, 180, 254, 0.9);
+            background: rgba(216, 180, 254, 0.8);
         }
 
-        /* Luminous Glassmorphism - Brighter and more colorful */
+        /* Luminous Glassmorphism */
         .glass-hud {
-            background: rgba(14, 16, 48, 0.9); /* Luminous Indigo Glass */
+            background: rgba(16, 20, 55, 0.88);
             backdrop-filter: blur(24px) saturate(180%);
             -webkit-backdrop-filter: blur(24px) saturate(180%);
             border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 10px 40px rgba(138, 43, 226, 0.25);
+            box-shadow: 0 10px 40px rgba(138, 43, 226, 0.15);
         }
         
         .glass-card {
-            background: rgba(18, 22, 58, 0.85); /* Rich colorful indigo panel */
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+            background: rgba(20, 25, 65, 0.82);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
             transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         }
         
         .glass-card:hover {
-            background: rgba(28, 34, 85, 0.95);
-            border-color: rgba(216, 180, 254, 0.7);
-            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.45);
-            transform: translateY(-5px) scale(1.02);
+            background: rgba(28, 35, 88, 0.95);
+            border-color: rgba(216, 180, 254, 0.6);
+            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.35);
+            transform: translateY(-4px) scale(1.01);
         }
 
-        /* Contrast Shadows for Text Readability */
+        /* Text Contrast Shadows for Brighter backgrounds */
         .text-readable {
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
         }
         
         .title-readable {
-            text-shadow: 0 3px 12px rgba(0, 0, 0, 0.9), 0 0 25px rgba(216, 180, 254, 0.45);
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.85), 0 0 20px rgba(216, 180, 254, 0.3);
         }
 
         /* Vibrant gradient colors */
         .text-gradient-cosmic {
-            background: linear-gradient(135deg, #ffffff 0%, #fbcfe8 50%, #d8b4fe 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 45%, #c084fc 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         /* Bright glowing background with nebula shine */
         .bg-fixed-back {
-            background-image: linear-gradient(rgba(10, 8, 32, 0.4), rgba(12, 18, 45, 0.5)), url('back.jpg');
+            background-image: linear-gradient(rgba(14, 11, 36, 0.5), rgba(15, 23, 42, 0.6)), url('back.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -101,35 +101,34 @@
 
         /* Keyframe animations */
         @keyframes float-orbit {
-            0% { transform: rotate(0deg) translateY(-6px) rotate(0deg); }
-            50% { transform: rotate(180deg) translateY(6px) rotate(-180deg); }
-            100% { transform: rotate(360deg) translateY(-6px) rotate(-360deg); }
+            0% { transform: rotate(0deg) translateY(-5px) rotate(0deg); }
+            50% { transform: rotate(180deg) translateY(5px) rotate(-180deg); }
+            100% { transform: rotate(360deg) translateY(-5px) rotate(-360deg); }
         }
         .orbit-float {
-            animation: float-orbit 16s linear infinite;
+            animation: float-orbit 18s linear infinite;
         }
 
         /* Glowing Constellation Connection Path */
         .constellation-line {
-            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.7) 15%, rgba(244, 114, 182, 0.7) 85%, transparent);
-            box-shadow: 0 0 12px rgba(216, 180, 254, 0.5);
+            background: linear-gradient(to bottom, transparent, rgba(216, 180, 254, 0.6) 15%, rgba(244, 114, 182, 0.6) 85%, transparent);
+            box-shadow: 0 0 10px rgba(216, 180, 254, 0.4);
         }
 
-        /* Scroll Reveal base style */
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        /* Tab Switch Animation */
+        .tab-content {
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+        .tab-content.hidden {
+            display: none;
+            opacity: 0;
+            transform: translateY(10px);
         }
     </style>
 </head>
 <body class="bg-cosmic-dark text-slate-100 font-sans antialiased overflow-x-hidden bg-fixed-back relative">
 
-    <!-- Interactive Particle Background Canvas (Must be pointer-events-none) -->
+    <!-- Interactive Particle Background Canvas -->
     <canvas id="starfield" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
 
     <!-- HEADS-UP DISPLAY (HUD) NAVIGATION -->
@@ -141,7 +140,7 @@
             </a>
             
             <div class="flex items-center gap-6">
-                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/60 to-pink-500/60 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/30 relative z-50">
+                <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/50 to-pink-500/50 hover:from-violet-500 hover:to-pink-500 border border-violet-400/50 text-white font-bold text-sm transition flex items-center gap-2 shadow-lg shadow-violet-500/20">
                     <i class="fab fa-google-drive"></i> Xem bài tập trên GG drive
                 </a>
             </div>
@@ -152,16 +151,16 @@
     <main class="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-16">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
-            <!-- LEFT COLUMN: PERSISTENT HUD CONTROL PANEL (33% Width on Desktop) -->
-            <aside class="lg:col-span-4 lg:sticky lg:top-28 flex flex-col gap-6 relative z-30">
+            <!-- LEFT COLUMN: PERSISTENT HUD CONTROL PANEL -->
+            <aside class="lg:col-span-4 lg:sticky lg:top-28 flex flex-col gap-6 z-30">
                 
                 <!-- Profile Capsule Card -->
                 <div class="glass-hud rounded-3xl p-6 relative overflow-hidden shadow-2xl">
-                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-violet-400/30 to-pink-400/30 blur-md opacity-45 -z-10"></div>
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-violet-400/30 to-pink-400/30 blur-md opacity-40 -z-10"></div>
                     
                     <!-- Avatar Orbit Area -->
                     <div class="relative w-40 h-40 mx-auto mb-6 flex items-center justify-center">
-                        <div class="absolute inset-0 rounded-full border-2 border-dashed border-violet-400/50 orbit-float"></div>
+                        <div class="absolute inset-0 rounded-full border-2 border-dashed border-violet-400/40 orbit-float pointer-events-none"></div>
                         <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-white/30 shadow-xl relative z-10">
                             <img src="Hình 1.jpg" alt="Trần Thị Thu Phương" class="w-full h-full object-cover">
                         </div>
@@ -175,7 +174,7 @@
                         <div class="h-px bg-white/20 my-3"></div>
                         
                         <!-- Metadata block -->
-                        <div class="flex flex-col gap-2.5 text-sm text-slate-100 text-left font-light px-2 text-readable">
+                        <div class="flex flex-col gap-2.5 text-xs sm:text-sm text-slate-100 text-left font-light px-2 text-readable">
                             <div class="flex items-center gap-3">
                                 <i class="fa-solid fa-graduation-cap text-violet-300 w-5"></i>
                                 <span>Ngôn ngữ & Văn hóa Anh</span>
@@ -193,9 +192,9 @@
                 </div>
 
                 <!-- Interactive Dual-Tab Panel (Mục tiêu vs Tổng kết) -->
-                <div class="glass-hud rounded-3xl p-6 flex flex-col gap-4 shadow-2xl relative z-30">
+                <div class="glass-hud rounded-3xl p-6 flex flex-col gap-4 shadow-2xl">
                     <!-- Tab Headers -->
-                    <div class="flex bg-slate-950/70 rounded-full p-1 border border-white/15 text-xs sm:text-sm font-semibold">
+                    <div class="flex bg-slate-950/60 rounded-full p-1 border border-white/10 text-xs sm:text-sm font-semibold">
                         <button onclick="switchTab('goals-tab')" id="goals-tab-btn" class="w-1/2 py-2 rounded-full text-center text-white bg-violet-600/50 border border-violet-400/30 transition duration-300 shadow-md">
                             <i class="fa-solid fa-bullseye mr-1.5"></i> Mục Tiêu
                         </button>
@@ -219,7 +218,7 @@
                             </div>
                             <div class="flex items-start gap-2">
                                 <span class="text-violet-300 font-bold">•</span>
-                                <span>Rèn luyện thói quen tự nghiên cứu, kiểm chứng học thuật chân chính.</span>
+                                <span>Rèn luyện thói quen tự nghiên cứu học thuật chân chính.</span>
                             </div>
                         </div>
                     </div>
@@ -253,7 +252,7 @@
                     <span class="text-xs font-semibold uppercase tracking-widest text-violet-300">Course Portfolio Journey</span>
                     <h2 class="font-serif text-3xl sm:text-4.5xl font-bold text-white leading-tight title-readable text-gradient-cosmic">Hành Trình Chòm Sao Sáng Tạo</h2>
                     <p class="text-slate-100 font-light text-sm sm:text-base text-readable">
-                        Các bài tập nghiên cứu số được bài trí dọc hành trình bất đối xứng. Hãy click vào từng Constellation Node để khám phá báo cáo chi tiết.
+                        Các bài tập nghiên cứu số được bài trí dọc hành trình bất đối xứng. Hãy nhấp trực tiếp vào từng thẻ bên dưới để khám phá nội dung chi tiết.
                     </p>
                 </div>
 
@@ -268,20 +267,20 @@
                             <p class="text-xs text-slate-300">Xem trực tiếp tệp PDF báo cáo, hình ảnh chất lượng cao trên Drive.</p>
                         </div>
                     </div>
-                    <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-4 py-2 text-xs rounded-full bg-violet-600/50 hover:bg-violet-600 border border-violet-400/50 text-white font-bold transition shadow-md relative z-30">
+                    <a href="https://drive.google.com/drive/folders/15UpyTtbLaAvvBfieNJzwuYkU8grxUsLn?usp=drive_link" target="_blank" class="px-4 py-2 text-xs rounded-full bg-violet-600/50 hover:bg-violet-600 border border-violet-400/50 text-white font-bold transition shadow-md relative z-40">
                         Truy cập Drive
                     </a>
                 </div>
 
                 <!-- ASYMMETRICAL CONSTELLATION PATH -->
-                <div class="relative flex flex-col gap-16 py-8">
+                <div class="relative flex flex-col gap-16 py-8 z-30">
                     <!-- Connective Vertical Dotted Line -->
-                    <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 constellation-line z-0"></div>
+                    <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 constellation-line z-0 pointer-events-none"></div>
 
                     <!-- CARD 1: Left Aligned on Desktop -->
                     <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
-                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
-                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(1)">
+                        <div class="w-full md:w-[45%] z-10 pointer-events-auto">
+                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" data-project-id="1">
                                 <span class="text-xs text-blue-300 font-bold uppercase tracking-widest">Bài Tập 1 • Mục 1.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Quản Lý Thư Mục (12 Bước)</h3>
                                 <p class="text-xs text-slate-200 font-light leading-relaxed text-readable">Hệ thống hóa toàn bộ quy trình tổ chức, sao chép và dọn dẹp tệp dữ liệu trên Windows, thiết lập kỹ năng chuẩn hành trình số.</p>
@@ -292,7 +291,7 @@
                             </div>
                         </div>
                         <!-- Timeline Node Point -->
-                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-blue-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#93c5fd]"></div>
+                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-blue-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#93c5fd] pointer-events-none"></div>
                         <div class="w-0 md:w-[45%]"></div>
                     </div>
 
@@ -300,9 +299,9 @@
                     <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
                         <div class="w-0 md:w-[45%]"></div>
                         <!-- Timeline Node Point -->
-                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#a5b4fc]"></div>
-                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
-                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(2)">
+                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#a5b4fc] pointer-events-none"></div>
+                        <div class="w-full md:w-[45%] z-10 pointer-events-auto">
+                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" data-project-id="2">
                                 <span class="text-xs text-indigo-300 font-bold uppercase tracking-widest">Bài Tập 2 • Mục 2.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Đánh Giá 10 Tài Liệu SFL</h3>
                                 <p class="text-xs text-slate-200 font-light leading-relaxed text-readable">Danh mục 10 bài báo khoa học về Ngôn ngữ học hệ thống chức năng chuẩn Harvard kèm bảng phân tích kiểm định độ tin cậy.</p>
@@ -316,8 +315,8 @@
 
                     <!-- CARD 3: Left Aligned on Desktop -->
                     <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
-                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
-                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(3)">
+                        <div class="w-full md:w-[45%] z-10 pointer-events-auto">
+                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" data-project-id="3">
                                 <span class="text-xs text-purple-300 font-bold uppercase tracking-widest">Bài Tập 3 • Mục 3.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Kỹ Nghệ Thiết Kế Prompt</h3>
                                 <p class="text-xs text-slate-200 font-light leading-relaxed text-readable">Phân tích thực tế 3 mức độ câu lệnh Prompt tóm tắt tác phẩm Truyện Kiều giúp tối ưu hóa chiều sâu phản hồi của LLMs.</p>
@@ -328,7 +327,7 @@
                             </div>
                         </div>
                         <!-- Timeline Node Point -->
-                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-purple-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#e9d5ff]"></div>
+                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-purple-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#e9d5ff] pointer-events-none"></div>
                         <div class="w-0 md:w-[45%]"></div>
                     </div>
 
@@ -336,9 +335,9 @@
                     <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
                         <div class="w-0 md:w-[45%]"></div>
                         <!-- Timeline Node Point -->
-                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-pink-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#fbcfe8]"></div>
-                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
-                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(4)">
+                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-pink-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#fbcfe8] pointer-events-none"></div>
+                        <div class="w-full md:w-[45%] z-10 pointer-events-auto">
+                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" data-project-id="4">
                                 <span class="text-xs text-pink-300 font-bold uppercase tracking-widest">Bài Tập 4 • Mục 4.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Hợp Tác Nhóm Đám Mây</h3>
                                 <p class="text-xs text-slate-200 font-light leading-relaxed text-readable">Phân tích kinh nghiệm phối hợp giữa Google Docs, Drive và MS Teams để kiểm soát dữ liệu bài viết trơn tru.</p>
@@ -352,8 +351,8 @@
 
                     <!-- CARD 5: Left Aligned on Desktop -->
                     <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
-                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
-                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(5)">
+                        <div class="w-full md:w-[45%] z-10 pointer-events-auto">
+                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" data-project-id="5">
                                 <span class="text-xs text-cyan-300 font-bold uppercase tracking-widest">Bài Tập 5 • Mục 5.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">AI Sáng Tạo Infographic</h3>
                                 <p class="text-xs text-slate-200 font-light leading-relaxed text-readable">Xây dựng quy trình tích hợp ChatGPT, DALL·E 3 và Canva để tạo lập ấn phẩm sư phạm cá nhân hóa học tập hữu ích.</p>
@@ -364,7 +363,7 @@
                             </div>
                         </div>
                         <!-- Timeline Node Point -->
-                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#67e8f9]"></div>
+                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#67e8f9] pointer-events-none"></div>
                         <div class="w-0 md:w-[45%]"></div>
                     </div>
 
@@ -372,9 +371,9 @@
                     <div class="relative flex flex-col md:flex-row items-center justify-start md:justify-between w-full reveal z-10">
                         <div class="w-0 md:w-[45%]"></div>
                         <!-- Timeline Node Point -->
-                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-amber-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#fde047]"></div>
-                        <div class="w-full md:w-[45%] relative z-30 pointer-events-auto">
-                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" onclick="openModal(6)">
+                        <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-amber-300 border-4 border-slate-900 z-20 hidden md:block shadow-[0_0_15px_#fde047] pointer-events-none"></div>
+                        <div class="w-full md:w-[45%] z-10 pointer-events-auto">
+                            <div class="glass-card rounded-3xl p-6 cursor-pointer hover-3d" data-project-id="6">
                                 <span class="text-xs text-amber-300 font-bold uppercase tracking-widest">Bài Tập 6 • Mục 6.4</span>
                                 <h3 class="text-lg font-serif font-bold text-white mt-1 mb-2 text-readable">Đạo Đức Ứng Dụng AI</h3>
                                 <p class="text-xs text-slate-200 font-light leading-relaxed text-readable">Đúc kết hướng dẫn đạo đức của Đại học Quốc gia Hà Nội và bộ 7 quy tắc trách nhiệm cá nhân tự lập lập.</p>
@@ -388,13 +387,70 @@
 
                 </div>
 
+                <!-- NEW: INTERACTIVE ILLUSTRATION WORKSPACE (Xịn xò, Trực quan hóa tương tác) -->
+                <div class="reveal mt-8 z-30">
+                    <div class="flex flex-col gap-3 mb-6">
+                        <span class="text-xs font-semibold uppercase tracking-widest text-cyan-300">Simulation Terminal</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white text-readable">Giao Diện Mô Phỏng Phối Hợp AI</h2>
+                        <p class="text-slate-300 font-light text-xs sm:text-sm">Bấm vào các giai đoạn để xem cách Thu Phương tích hợp tư duy với công cụ AI.</p>
+                    </div>
+
+                    <div class="glass-card rounded-3xl p-6 grid grid-cols-1 md:grid-cols-12 gap-6 border border-white/10">
+                        <!-- Menu selection (Left) -->
+                        <div class="md:col-span-4 flex flex-col gap-2.5">
+                            <button onclick="showSimulation(1)" id="sim-btn-1" class="px-4 py-3 rounded-xl bg-violet-600/30 text-white border border-violet-400/40 text-xs sm:text-sm text-left font-medium transition duration-300">
+                                <i class="fa-solid fa-lightbulb mr-2"></i> Giai Đoạn 1: Lên ý tưởng
+                            </button>
+                            <button onclick="showSimulation(2)" id="sim-btn-2" class="px-4 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-900 text-slate-300 hover:text-white border border-white/5 text-xs sm:text-sm text-left font-medium transition duration-300">
+                                <i class="fa-solid fa-book mr-2"></i> Giai Đoạn 2: Lọc học liệu
+                            </button>
+                            <button onclick="showSimulation(3)" id="sim-btn-3" class="px-4 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-900 text-slate-300 hover:text-white border border-white/5 text-xs sm:text-sm text-left font-medium transition duration-300">
+                                <i class="fa-solid fa-compass-drafting mr-2"></i> Giai Đoạn 3: Tạo hình ảnh
+                            </button>
+                            <button onclick="showSimulation(4)" id="sim-btn-4" class="px-4 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-900 text-slate-300 hover:text-white border border-white/5 text-xs sm:text-sm text-left font-medium transition duration-300">
+                                <i class="fa-solid fa-file-pen mr-2"></i> Giai Đoạn 4: Biên tập lại
+                            </button>
+                        </div>
+
+                        <!-- Console Display (Right) -->
+                        <div class="md:col-span-8 bg-slate-950/90 rounded-2xl p-5 border border-white/10 flex flex-col justify-between font-mono text-xs sm:text-sm min-h-[180px]">
+                            <div class="flex items-center gap-2 mb-3 border-b border-white/5 pb-2 text-slate-400">
+                                <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                                <span class="ml-2 text-xs">VNU_Terminal_AI_Synthesis.sh</span>
+                            </div>
+                            <div class="flex-grow flex flex-col gap-2.5 text-slate-300" id="sim-display-box">
+                                <p class="text-violet-300">// KHỞI CHẠY GIAI ĐOẠN 1: BRAINSTORMING</p>
+                                <p><strong>Công cụ:</strong> ChatGPT 4o</p>
+                                <p><strong>Prompt gán vai:</strong> "Bạn là giáo sư chuyên ngành Ngôn ngữ học ULIS..."</p>
+                                <p class="text-emerald-400"><strong>Kết quả:</strong> Đề xuất thành công 3 luận điểm cốt lõi về cá nhân hóa giáo dục số.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
     </main>
 
+    <!-- FOOTER -->
+    <footer class="glass-panel border-t border-white/10 relative z-10 py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-between">
+            <div class="text-center md:text-left flex flex-col gap-2">
+                <p class="font-serif text-xl font-semibold text-gradient-cosmic title-readable">Trần Thị Thu Phương</p>
+                <p class="text-xs text-slate-400 font-light">Digital Portfolio • Sáng tạo để vươn xa</p>
+            </div>
+            <div class="text-center md:text-right text-xs text-slate-500 font-light flex flex-col gap-1">
+                <p>© 2026 Trần Thị Thu Phương. All rights reserved.</p>
+                <p>Designed for Introduction to Digital Technology & AI Applications - ULIS</p>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- DETAILED MODALS SYSTEM -->
-    <div id="modal-container" class="fixed inset-0 z-50 hidden bg-cosmic-dark/90 backdrop-blur-lg items-center justify-center p-4">
+    <div id="modal-container" class="fixed inset-0 z-50 hidden bg-cosmic-dark/95 backdrop-blur-lg items-center justify-center p-4">
         
         <!-- Modal Card -->
         <div class="glass-card w-full max-w-4xl max-h-[85vh] rounded-3xl overflow-hidden relative flex flex-col transition-all duration-300 transform scale-95 opacity-0" id="modal-card">
@@ -441,7 +497,7 @@
                 particles.push({
                     x: Math.random() * canvas.width,
                     y: Math.random() * canvas.height,
-                    radius: Math.random() * 2 + 0.5, // Brighter stars
+                    radius: Math.random() * 2 + 0.5,
                     alpha: Math.random() * 0.5 + 0.2,
                     speed: Math.random() * 0.2 + 0.05,
                     direction: Math.random() * Math.PI * 2
@@ -449,7 +505,7 @@
             }
         }
 
-        // Mouse Move Listener to gather mouse trail particles (Bright & Dreamy colors)
+        // Mouse Move Listener to gather mouse trail particles
         window.addEventListener('mousemove', (e) => {
             if (mouseTrail.length < 50) {
                 mouseTrail.push({
@@ -483,12 +539,12 @@
                 ctx.fill();
             });
 
-            // 2. Draw and fade mouse trail particles (Mộng mơ & Tương tác cao)
+            // 2. Draw and fade mouse trail particles
             for (let i = 0; i < mouseTrail.length; i++) {
                 let p = mouseTrail[i];
                 p.x += p.vx;
                 p.y += p.vy;
-                p.alpha -= 0.012; // Slower fade for dreamier effect
+                p.alpha -= 0.012;
 
                 if (p.alpha <= 0) {
                     mouseTrail.splice(i, 1);
@@ -511,7 +567,7 @@
 
 
         // Interactive Dual-Tab Panel Switcher
-        function switchTab(tabId) {
+        window.switchTab = function(tabId) {
             const goalsBtn = document.getElementById('goals-tab-btn');
             const reflectionBtn = document.getElementById('reflection-tab-btn');
             const goalsContent = document.getElementById('goals-tab-content');
@@ -573,64 +629,64 @@
         });
 
 
-        // COMPREHENSIVE RAW CONTENT DATA FOR 6 ASSIGNMENTS
+        // COMPREHENSIVE RAW CONTENT DATA FOR 6 ASSIGNMENTS (No truncation)
         const modalsData = {
             1: {
                 subtitle: "Bài Tập 1 • Mục 1.4",
-                title: "Thao Tác Tệp & Thư Mục: Thiết Lập Thói Quen Chuẩn Hóa Quản Trị",
+                title: "Thao Tác Tệp & Thư Mục: 12 Bước Quản Trị Hệ Thống Chuẩn",
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
                         <p class="font-light">
-                            Trong môi trường làm việc kỹ thuật số, cấu trúc dữ liệu khoa học là chìa khóa tối ưu hiệu suất. Bài thực hành này giúp mình hệ thống hóa toàn bộ 12 bước thao tác hệ điều hành Windows tiêu chuẩn để tối ưu hóa không gian lưu trữ và đảm bảo an toàn thông tin:
+                            Trong bất kỳ môi trường kỹ thuật số nào, cấu trúc dữ liệu khoa học là chiếc chìa khóa tối ưu hiệu suất. Bài thực hành này giúp mình hệ thống hóa toàn bộ 12 bước thao tác hệ điều hành Windows tiêu chuẩn để tối ưu không gian lưu trữ và đảm bảo an toàn thông tin:
                         </p>
                         
                         <!-- 12-Step Vertical Timeline -->
-                        <div class="glass-card rounded-2xl p-6 border border-white/20 flex flex-col gap-4">
+                        <div class="glass-card rounded-2xl p-6 border border-white/10 flex flex-col gap-4">
                             <h4 class="font-serif font-bold text-white mb-2 flex items-center gap-2">
-                                <i class="fa-solid fa-list-ol text-violet-300"></i> Quy trình thực hiện chuẩn hóa 12 bước:
+                                <i class="fa-solid fa-list-ol text-violet-400"></i> Quy trình thực hiện chuẩn hóa 12 bước:
                             </h4>
                             <div class="space-y-4 font-light text-xs sm:text-sm pl-2">
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">1</span>
                                     <span><strong>Mở File Explorer:</strong> Nhấn tổ hợp phím tắt <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Windows + E</code> hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">2</span>
                                     <span><strong>Truy cập ổ đĩa:</strong> Ở cột trái nhấp vào <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">This PC</code>, nhấp đúp vào ổ đĩa không phải ổ hệ thống (D: hoặc E:). Nếu chỉ có ổ C:, truy cập thư mục <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Documents</code>.</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">3</span>
                                     <span><strong>Tạo thư mục mới:</strong> Nhấp chuột phải vào khoảng trống -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Folder</code>. Đặt tên thư mục theo cấu trúc chuẩn: <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs font-semibold">ThucHanh_TranThiThuPhuong</code> rồi nhấn Enter.</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">4</span>
                                     <span><strong>Vào thư mục vừa tạo:</strong> Nhấp đúp vào thư mục <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">ThucHanh_TranThiThuPhuong</code> để truy cập vào trong.</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">5</span>
                                     <span><strong>Tạo tệp tin văn bản:</strong> Nhấp chuột phải vào khoảng trống -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Text Document</code>. Đặt tên là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChu.txt</code>. Nhấn Enter.</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">6</span>
-                                    <span><strong>Đổi tên tệp tin:</strong> Nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChu.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Rename</code>. Đổi tên thành <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code>. Nhấn Enter.</span>
+                                    <span><strong>Đổi tên tệp tin:</strong> Nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChu.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Rename</code> (hoặc phím tắt F2). Đổi tên thành <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code>. Nhấn Enter.</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">7</span>
                                     <span><strong>Tạo thư mục con:</strong> Nhấp chuột phải trong thư mục chính -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">New -> Folder</code>. Đặt tên thư mục con là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>.</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">8</span>
-                                    <span><strong>Sao chép tệp tin:</strong> Nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Copy</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + C</code>). Nhấp đúp vào thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Paste</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + V</code>).</span>
+                                    <span><strong>Sao chép tệp tin (Copy & Paste):</strong> Nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Copy</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + C</code>). Nhấp đúp vào thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Paste</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + V</code>).</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">9</span>
                                     <span><strong>Di chuyển tệp tin (Cut & Paste):</strong> Trở lại thư mục chính. Tạo một tệp mới tên là <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">DiChuyen.txt</code>. Nhấp chuột phải vào tệp -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Cut</code> (hoặc bấm <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + X</code>). Nhấp đúp vào <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Paste</code> (hoặc <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Ctrl + V</code>).</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">10</span>
                                     <span><strong>Xóa tệp tin:</strong> Trong thư mục con <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">TaiLieu</code>, nhấp chuột phải vào tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">GhiChuQuanTrong.txt</code> -> chọn <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">Delete</code> để tệp chuyển vào Thùng rác (Recycle Bin).</span>
                                 </div>
-                                <div class="flex items-start gap-3 border-b border-white/10 pb-2">
+                                <div class="flex items-start gap-3 border-b border-white/5 pb-2">
                                     <span class="w-6 h-6 rounded-full bg-violet-600/35 text-violet-200 flex items-center justify-center font-bold">11</span>
                                     <span><strong>Xóa vĩnh viễn:</strong> Chọn tệp <code class="px-1.5 py-0.5 rounded bg-white/10 font-mono text-xs">DiChuyen.txt</code>, nhấn giữ phím <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Shift</code> và nhấn phím <code class="px-1 py-0.5 rounded bg-white/10 text-xs">Delete</code>, chọn đồng ý tại bảng cảnh báo hiện ra.</span>
                                 </div>
@@ -649,13 +705,13 @@
                 content: `
                     <div class="flex flex-col gap-6 text-slate-200">
                         <p class="font-light">
-                            Tại ULIS, viết học thuật đòi hỏi tính chuẩn xác của tài liệu tham chiếu. Dưới đây là danh sách đầy đủ 10 tài liệu nghiên cứu ngôn ngữ học Hệ thống Chức năng (SFL) và viết học thuật chuẩn Harvard, được thẩm định qua 5 mức độ tin cậy phục vụ nghiên cứu khoa học chuyên nghiệp:
+                            Viết học thuật đòi hỏi tính chuẩn xác của tài liệu tham chiếu. Dưới đây là danh sách đầy đủ 10 tài liệu nghiên cứu ngôn ngữ học Hệ thống Chức năng (SFL) và viết học thuật chuẩn Harvard, được thẩm định qua 5 mức độ tin cậy phục vụ nghiên cứu khoa học chuyên nghiệp:
                         </p>
 
                         <!-- Full 10 Bibliography references -->
                         <div class="glass-card rounded-2xl p-5 border border-white/10">
                             <h4 class="font-serif font-bold text-white mb-3 flex items-center gap-2 text-sm sm:text-base">
-                                <i class="fa-solid fa-list-ol text-violet-300"></i> Danh mục 10 tài liệu tham khảo (Harvard Style):
+                                <i class="fa-solid fa-list-ol text-violet-400"></i> Danh mục 10 tài liệu tham khảo (Harvard Style):
                             </h4>
                             <ol class="list-decimal list-inside space-y-2.5 text-xs sm:text-sm font-light">
                                 <li>Belmonte, I. và McCabe-Annega, M. (2001). 'Theme-Rheme patterns in L2 writing', <em>Functions of Language</em>, 8(2), tr. 143-177.</li>
@@ -720,7 +776,7 @@
                                         <td class="p-3">Journal</td>
                                         <td class="p-3">Trung bình</td>
                                         <td class="p-3 text-center font-semibold text-violet-300">4</td>
-                                        <td class="p-3">Mô tả cách ứng dụng trực tiếp lý thuyết chức năng vào thực tiễn viết học thuật.</td>
+                                        <td class="p-3">Mô tả cách ứng dụng lý thuyết chức năng vào thực tiễn viết học thuật.</td>
                                     </tr>
                                     <tr>
                                         <td class="p-3 font-semibold">5</td>
@@ -774,7 +830,7 @@
                                         <td class="p-3">Tổ chức lớn</td>
                                         <td class="p-3">Rất cao</td>
                                         <td class="p-3 text-center font-semibold text-violet-300">4</td>
-                                        <td class="p-3">Học liệu thực tiễn và phong phú được chấp nhận rộng rãi toàn cầu.</td>
+                                        <td class="p-3">Cổng thông tin mở chính thống cực kỳ hữu ích cho thực hành sư phạm tiếng Anh.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -849,7 +905,7 @@
                         <!-- Pros & Cons List -->
                         <div class="space-y-4">
                             <div class="glass-card rounded-2xl p-5 border border-white/10 flex flex-col gap-2">
-                                <h4 class="font-serif font-semibold text-amber-300 flex items-center gap-2">
+                                <h4 class="font-serif font-semibold text-amber-400 flex items-center gap-2">
                                     <i class="fab fa-google-drive"></i> Google Drive - Trung tâm lưu trữ
                                 </h4>
                                 <div class="text-xs sm:text-sm font-light space-y-1.5 text-slate-200">
@@ -886,7 +942,7 @@
                             </h4>
                             <div class="space-y-3 font-light text-xs sm:text-sm text-slate-200 pl-2">
                                 <p><strong>1. Xung đột chỉnh sửa đồng thời trên Docs:</strong> Khi các thành viên viết cùng phân đoạn gây đảo lộn bố cục.</p>
-                                <p class="italic text-slate-300">• Khắc phục: Phân rõ khu vực biên soạn cho từng cá nhân, quy định mốc thời gian hoàn thành độc lập và khôi phục khi lỗi bằng Lịch sử phiên bản.</p>
+                                <p class="italic text-slate-300">• Khắc phục: Phân rõ khu vực biên soạn cho từng cá nhân, quy định khung giờ nộp bài độc lập và khôi phục khi lỗi bằng Lịch sử phiên bản.</p>
                                 <div class="h-px bg-white/10"></div>
                                 <p><strong>2. Trễ thông tin giao tiếp trực tuyến:</strong> Thành viên có thời gian sinh hoạt lệch nhau gây chậm trễ cập nhật công việc.</p>
                                 <p class="italic text-slate-300">• Khắc phục: Duy trì họp chốt tuần trên MS Teams, lập biên bản tóm tắt ghim ở kênh chat và tag tên để cảnh báo tiến độ.</p>
@@ -939,7 +995,7 @@
                                 <i class="fa-solid fa-triangle-exclamation"></i> Thách thức kỹ thuật của AI & Vai trò biên tập của con người
                             </h4>
                             <div class="space-y-3 font-light text-xs sm:text-sm pl-2">
-                                <p><strong>Hạn chế của máy móc:</strong> Ảnh minh họa do AI tạo ra thường bị lỗi vẽ chữ tiếng Việt bị méo hoặc sai chính tả nặng nề. Bố cục tự động Canva đề xuất đôi khi chưa tối ưu được khoảng cách.</p>
+                                <p><strong>Hạn chế của máy móc:</strong> Ảnh minh họa do AI tạo ra thường bị lỗi vẽ chữ tiếng Việt bị méo hoặc sai chính tả nặng nề. Bố cục tự động Canva đề xuất đôi khi chưa đồng đều về khoảng cách.</p>
                                 <div class="h-px bg-white/10"></div>
                                 <p><strong>Sự can thiệp sáng tạo cá nhân (Quyết định chất lượng):</strong></p>
                                 <ul class="list-disc list-inside space-y-1.5 pl-2 text-slate-200 text-xs sm:text-sm">
@@ -977,7 +1033,7 @@
                                     <span class="font-bold text-white">Prompt 3 (Grammar Check & Explanation):</span> "Check whether the following paragraph contains grammatical errors, awkward expressions or repetitive words. Explain the mistakes..." -> Nhờ AI kiểm lỗi cấu trúc để tự sửa thay vì viết hộ hoàn toàn.
                                 </div>
                                 <div class="p-3 bg-black/40 rounded border border-white/10">
-                                    <span class="font-bold text-white">Prompt 4 (Research Assistance):</span> "Recommend peer-reviewed evidence or official reports supporting the argument..." -> AI đề xuất các nguồn của IPCC, UN, OECD để sinh viên tự truy cập kiểm chứng thông tin gốc.
+                                    <span class="font-bold text-white">Prompt 4 (Research Assistance):</span> "Recommend peer-reviewed evidence or official reports supporting the argument..." -> AI đề xuất các nguồn của IPCC, UN, OECD để sinh viên tự truy cập lấy dẫn chứng gốc.
                                 </div>
                             </div>
                         </div>
@@ -1008,7 +1064,8 @@
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content');
 
-        function openModal(id) {
+        // FIXED openModal and closeModal global window scoping (Crucial fix for can't click bug)
+        window.openModal = function(id) {
             const data = modalsData[id];
             if (!data) return;
 
@@ -1027,7 +1084,7 @@
             document.body.style.overflow = 'hidden';
         }
 
-        function closeModal() {
+        window.closeModal = function() {
             modalCard.classList.remove('scale-100', 'opacity-100');
             modalCard.classList.add('scale-95', 'opacity-0');
             
@@ -1038,30 +1095,58 @@
             }, 250);
         }
 
-        modalContainer.addEventListener('click', (e) => {
-            if (e.target === modalContainer) {
-                closeModal();
-            }
+        // BIND CLICK LISTENERS TO ALL DYNAMIC CHỮ/CARDS (Robust dynamic listener)
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('[data-project-id]').forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = card.getAttribute('data-project-id');
+                    window.openModal(id);
+                });
+            });
         });
 
+        // INTERACTIVE WORKSPACE TERMINAL LOGIC
+        window.showSimulation = function(step) {
+            const display = document.getElementById('sim-display-box');
+            
+            // Reset button styles
+            for (let i = 1; i <= 4; i++) {
+                const btn = document.getElementById('sim-btn-' + i);
+                if (btn) btn.className = "px-4 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-900 text-slate-300 hover:text-white border border-white/5 text-xs sm:text-sm text-left font-medium transition duration-300";
+            }
+            
+            // Highlight active button
+            const activeBtn = document.getElementById('sim-btn-' + step);
+            if (activeBtn) activeBtn.className = "px-4 py-3 rounded-xl bg-violet-600/35 text-white border border-violet-400/40 text-xs sm:text-sm text-left font-medium transition duration-300";
 
-        // Dual-Tab Content Switcher Logic inside Left Capsule
-        function switchTab(tabId) {
-            const goalsBtn = document.getElementById('goals-tab-btn');
-            const reflectionBtn = document.getElementById('reflection-tab-btn');
-            const goalsContent = document.getElementById('goals-tab-content');
-            const reflectionContent = document.getElementById('reflection-tab-content');
-
-            if (tabId === 'goals-tab') {
-                goalsBtn.className = "w-1/2 py-2 rounded-full text-center text-white bg-violet-600/50 border border-violet-400/30 transition duration-300 shadow-md";
-                reflectionBtn.className = "w-1/2 py-2 rounded-full text-center text-slate-300 hover:text-white transition duration-300";
-                goalsContent.classList.remove('hidden');
-                reflectionContent.classList.add('hidden');
-            } else {
-                reflectionBtn.className = "w-1/2 py-2 rounded-full text-center text-white bg-pink-600/50 border border-pink-400/30 transition duration-300 shadow-md";
-                goalsBtn.className = "w-1/2 py-2 rounded-full text-center text-slate-300 hover:text-white transition duration-300";
-                reflectionContent.classList.remove('hidden');
-                goalsContent.classList.add('hidden');
+            if (step === 1) {
+                display.innerHTML = `
+                    <p class="text-violet-300">// KHỞI CHẠY GIAI ĐOẠN 1: BRAINSTORMING</p>
+                    <p><strong>Công cụ sử dụng:</strong> ChatGPT 4o</p>
+                    <p><strong>Prompt gán vai:</strong> "Bạn là giáo sư chuyên ngành Ngôn ngữ học ULIS..."</p>
+                    <p class="text-emerald-400"><strong>Kết quả đầu ra:</strong> Đề xuất thành công 3 luận điểm cốt lõi về cá nhân hóa giáo dục số.</p>
+                `;
+            } else if (step === 2) {
+                display.innerHTML = `
+                    <p class="text-blue-300">// KHỞI CHẠY GIAI ĐOẠN 2: CITATION ANALYSIS</p>
+                    <p><strong>Công cụ sử dụng:</strong> Google Scholar & Harvard Referencing Tool</p>
+                    <p><strong>Nhiệm vụ:</strong> Lọc 10 tệp tin tài liệu chuyên ngành Ngôn ngữ SFL.</p>
+                    <p class="text-emerald-400"><strong>Kết quả đầu ra:</strong> Hoàn thiện bảng kiểm định 10 dòng tài liệu cực kỳ chính xác.</p>
+                `;
+            } else if (step === 3) {
+                display.innerHTML = `
+                    <p class="text-pink-300">// KHỞI CHẠY GIAI ĐOẠN 3: IMAGE GENERATION</p>
+                    <p><strong>Công cụ sử dụng:</strong> DALL·E 3</p>
+                    <p><strong>Mô tả ảnh:</strong> "Thiết kế infographic tối giản màu xanh dương - trắng..."</p>
+                    <p class="text-rose-400"><strong>Sự cố:</strong> Ảnh phát sinh các ký tự chữ tiếng Việt bị méo mó, lỗi chính tả.</p>
+                `;
+            } else if (step === 4) {
+                display.innerHTML = `
+                    <p class="text-cyan-300">// KHỞI CHẠY GIAI ĐOẠN 4: HUMAN REFINEMENT</p>
+                    <p><strong>Công cụ sử dụng:</strong> Canva AI & Kỹ năng cá nhân</p>
+                    <p><strong>Nhiệm vụ xử lý:</strong> Tách nền, xóa bỏ toàn bộ chữ rác của AI.</p>
+                    <p class="text-emerald-400"><strong>Kết quả đầu ra:</strong> Thay thế 100% bằng chữ tự biên soạn chuẩn xác tuyệt đối.</p>
+                `;
             }
         }
     </script>
